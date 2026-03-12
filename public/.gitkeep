@@ -1,0 +1,12 @@
+# Letakkan file gambar di sini:
+# - avatar.jpg (foto profil)
+# - project1.jpg, project2.jpg, project3.jpg (gambar project)
+# - resume.pdf (file CV)
+
+# Contoh struktur:
+# public/
+# ├── avatar.jpg
+# ├── project1.jpg
+# ├── project2.jpg
+# ├── project3.jpg
+# └── resume.pdf

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio Website
 
 Portfolio website responsif yang dibuat dengan React.js dan Vite.
@@ -73,3 +74,7 @@ Website ini bisa di-deploy ke:
 - Atau hosting lainnya
 
 Jalankan `npm run build` untuk membuat build production.
+=======
+# portofolio
+Portofolio aditya 2025
+>>>>>>> 32d9a5e8888644600b55370b86017ca70ce62ac2

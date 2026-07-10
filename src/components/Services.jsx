@@ -9,15 +9,13 @@ const Services = ({ data }) => {
       <div className="container">
         <SectionTitle 
           title="Layanan" 
-          subtitle="Layanan yang saya tawarkan untuk membantu project Anda" 
+          subtitle="Layanan yang saya tawarkan" 
         />
 
         <div className="services-grid">
           {data.map((service) => (
             <div key={service.id} className="service-card">
-              <div className="service-icon">
-                <span>{service.icon}</span>
-              </div>
+              <div className="service-icon">{service.icon}</div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
             </div>
@@ -31,7 +29,6 @@ const Services = ({ data }) => {
           display: flex;
           align-items: center;
           padding: 6rem 0 2rem;
-          background: rgba(255, 255, 255, 0.05);
         }
 
         @media (max-width: 768px) {
@@ -41,98 +38,49 @@ const Services = ({ data }) => {
           }
         }
 
-        @media (min-width: 769px) {
-          .page-section {
-            padding: 6rem 0 2rem;
-          }
-        }
-
         .services-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-          gap: 2rem;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          gap: 1.5rem;
+          max-width: 900px;
+          margin: 0 auto;
         }
 
         .service-card {
-          background: rgba(0, 0, 0, 0.2);
-          backdrop-filter: blur(20px);
-          border: 1px solid rgba(255, 255, 255, 0.08);
-          padding: 2.5rem;
-          border-radius: 1.5rem;
+          background: var(--bg-card);
+          border: 1px solid var(--border-color);
+          padding: 2rem 1.5rem;
+          border-radius: 12px;
           text-align: center;
-          box-shadow: 
-            0 4px 20px rgba(0, 0, 0, 0.15),
-            inset 0 1px 0 rgba(255, 255, 255, 0.08);
-          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-          position: relative;
-          overflow: hidden;
-        }
-
-        .service-card::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
-          transition: left 0.5s;
-        }
-
-        .service-card:hover::before {
-          left: 100%;
+          transition: all 0.2s ease;
         }
 
         .service-card:hover {
-          transform: translateY(-15px) scale(1.02);
-          background: rgba(0, 0, 0, 0.3);
-          box-shadow: 
-            0 25px 50px rgba(0, 0, 0, 0.25),
-            inset 0 1px 0 rgba(255, 255, 255, 0.15);
-          border-color: rgba(102, 126, 234, 0.3);
+          border-color: rgba(100, 181, 246, 0.3);
+          transform: translateY(-4px);
         }
 
         .service-icon {
-          width: 100px;
-          height: 100px;
-          background: var(--gradient-1);
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 0 auto 2rem;
-          font-size: 2.5rem;
-          box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
-          animation: pulse 2s ease-in-out infinite;
+          font-size: 2rem;
+          margin-bottom: 1rem;
         }
 
         .service-card h3 {
-          color: rgba(255, 255, 255, 0.95);
-          margin-bottom: 1rem;
-          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+          color: var(--text-primary);
+          margin-bottom: 0.5rem;
+          font-size: 1.05rem;
         }
 
         .service-card p {
-          color: rgba(255, 255, 255, 0.8);
+          color: var(--text-light);
           line-height: 1.6;
           margin: 0;
-          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          font-size: 0.9rem;
         }
 
         @media (max-width: 768px) {
           .services-grid {
             grid-template-columns: 1fr;
-            gap: 1.5rem;
-          }
-
-          .service-card {
-            padding: 1.5rem;
-          }
-
-          .service-icon {
-            width: 60px;
-            height: 60px;
-            font-size: 1.5rem;
           }
         }
       `}</style>

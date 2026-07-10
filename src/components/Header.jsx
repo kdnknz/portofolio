@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom'
 
 const Header = ({ data }) => {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const location = useLocation()
 
   useEffect(() => {
@@ -14,23 +13,18 @@ const Header = ({ data }) => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const handleMenuClick = () => {
-    setIsMobileMenuOpen(false)
-  }
-
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <nav className="nav">
           <div className="nav-brand">
-            <h3>{data.personal.name}</h3>
+            <Link to="/">{data.personal.name}</Link>
           </div>
           
-          <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
+          <ul className="nav-menu">
             <li>
               <Link 
                 to="/" 
-                onClick={handleMenuClick}
                 className={location.pathname === '/' ? 'active' : ''}
               >
                 Home
@@ -39,7 +33,6 @@ const Header = ({ data }) => {
             <li>
               <Link 
                 to="/skills" 
-                onClick={handleMenuClick}
                 className={location.pathname === '/skills' ? 'active' : ''}
               >
                 Skills
@@ -48,7 +41,6 @@ const Header = ({ data }) => {
             <li>
               <Link 
                 to="/experience" 
-                onClick={handleMenuClick}
                 className={location.pathname === '/experience' ? 'active' : ''}
               >
                 Experience
@@ -57,15 +49,8 @@ const Header = ({ data }) => {
             <li>
               <Link 
                 to="/others" 
-                onClick={handleMenuClick}
                 className={
-                  location.pathname === '/others' || 
-                  location.pathname === '/about' || 
-                  location.pathname === '/projects' || 
-                  location.pathname === '/education' || 
-                  location.pathname === '/services' || 
-                  location.pathname === '/contact' ||
-                  location.pathname === '/certificate'
+                  ['/others', '/about', '/projects', '/education', '/services', '/contact', '/certificate'].includes(location.pathname)
                     ? 'active' 
                     : ''
                 }
@@ -74,15 +59,6 @@ const Header = ({ data }) => {
               </Link>
             </li>
           </ul>
-
-          <button 
-            className="nav-toggle"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
         </nav>
       </div>
 
@@ -92,20 +68,18 @@ const Header = ({ data }) => {
           top: 0;
           left: 0;
           right: 0;
-          background: rgba(0, 0, 0, 0.3);
-          backdrop-filter: blur(20px);
-          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          background: rgba(15, 23, 42, 0.8);
+          backdrop-filter: blur(12px);
+          border-bottom: 1px solid transparent;
           z-index: 1000;
-          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: all 0.3s ease;
           padding: 1rem 0;
         }
 
         .header.scrolled {
-          background: rgba(0, 0, 0, 0.25);
-          backdrop-filter: blur(25px);
-          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+          background: rgba(15, 23, 42, 0.95);
+          border-bottom: 1px solid var(--border-color);
           padding: 0.75rem 0;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .nav {
@@ -114,110 +88,43 @@ const Header = ({ data }) => {
           align-items: center;
         }
 
-        .nav-brand h3 {
-          color: white;
-          font-size: 1.75rem;
-          margin: 0;
-          font-weight: 700;
-          text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-          background: linear-gradient(45deg, #ffffff, #f0f0f0);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-        }
-
-        .header.scrolled .nav-brand h3 {
-          color: white;
-          background: linear-gradient(45deg, #ffffff, #f0f0f0);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        .nav-brand a {
+          color: var(--text-primary);
+          font-size: 1.25rem;
+          font-weight: 600;
+          text-decoration: none;
+          letter-spacing: -0.5px;
         }
 
         .nav-menu {
           display: flex;
           list-style: none;
-          gap: 2rem;
+          gap: 0.5rem;
           margin: 0;
         }
 
         .nav-menu a {
-          color: white;
+          color: var(--text-light);
           text-decoration: none;
-          font-weight: 600;
-          cursor: pointer;
-          transition: all 0.3s ease;
+          font-weight: 500;
+          font-size: 0.9rem;
           padding: 0.5rem 1rem;
-          border-radius: 25px;
-          position: relative;
-          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .header.scrolled .nav-menu a {
-          color: white;
-          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+          border-radius: 6px;
+          transition: all 0.2s ease;
         }
 
         .nav-menu a:hover {
-          background: rgba(255, 255, 255, 0.25);
-          backdrop-filter: blur(10px);
-          transform: translateY(-2px);
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .header.scrolled .nav-menu a:hover {
-          background: rgba(255, 255, 255, 0.2);
-          color: white;
+          color: var(--text-primary);
+          background: rgba(148, 163, 184, 0.1);
         }
 
         .nav-menu a.active {
-          background: rgba(255, 255, 255, 0.2);
-          color: white;
-          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
-          border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .header.scrolled .nav-menu a.active {
-          background: rgba(255, 255, 255, 0.2);
-          color: white;
-          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
-          border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .nav-toggle {
-          display: none;
-          flex-direction: column;
-          background: none;
-          border: none;
-          cursor: pointer;
-          padding: 0.5rem;
-        }
-
-        .nav-toggle span {
-          width: 25px;
-          height: 3px;
-          background: white;
-          margin: 3px 0;
-          transition: 0.3s;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .header.scrolled .nav-toggle span {
-          background: white;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+          color: var(--primary-color);
+          background: rgba(100, 181, 246, 0.1);
         }
 
         @media (max-width: 768px) {
           .header {
-            display: none;
-          }
-        }
-
-        @media (min-width: 769px) {
-          .nav-toggle {
             display: none;
           }
         }

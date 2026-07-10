@@ -9,37 +9,40 @@ const About = ({ data }) => {
       <div className="container">
         <SectionTitle 
           title="Tentang Saya" 
-          subtitle="Mengenal lebih dekat tentang background dan passion saya" 
+          subtitle="Background dan pengalaman saya" 
         />
 
         <div className="about-content">
           <div className="about-text">
-            <p>{data.bio}</p>
+            <p className="about-bio">{data.bio}</p>
             
             <div className="about-stats">
               <div className="stat">
-                <h3>50+</h3>
-                <p>Projects Completed</p>
+                <span className="stat-number">50+</span>
+                <span className="stat-label">Projects</span>
               </div>
               <div className="stat">
-                <h3>3+</h3>
-                <p>Years Experience</p>
+                <span className="stat-number">3+</span>
+                <span className="stat-label">Tahun Experience</span>
               </div>
               <div className="stat">
-                <h3>30+</h3>
-                <p>Happy Clients</p>
+                <span className="stat-number">30+</span>
+                <span className="stat-label">Happy Clients</span>
               </div>
             </div>
 
             <div className="about-info">
               <div className="info-item">
-                <strong>Email:</strong> {data.email}
+                <span className="info-label">Email</span>
+                <span className="info-value">{data.email}</span>
               </div>
               <div className="info-item">
-                <strong>Phone:</strong> {data.phone}
+                <span className="info-label">Phone</span>
+                <span className="info-value">{data.phone}</span>
               </div>
               <div className="info-item">
-                <strong>Location:</strong> {data.location}
+                <span className="info-label">Location</span>
+                <span className="info-value">{data.location}</span>
               </div>
             </div>
           </div>
@@ -56,7 +59,6 @@ const About = ({ data }) => {
           display: flex;
           align-items: center;
           padding: 6rem 0 2rem;
-          background: rgba(255, 255, 255, 0.05);
         }
 
         @media (max-width: 768px) {
@@ -66,111 +68,74 @@ const About = ({ data }) => {
           }
         }
 
-        @media (min-width: 769px) {
-          .page-section {
-            padding: 6rem 0 2rem;
-          }
-        }
         .about-content {
           display: grid;
-          grid-template-columns: 2fr 1fr;
-          gap: 4rem;
+          grid-template-columns: 1.5fr 1fr;
+          gap: 3rem;
           align-items: center;
         }
 
-        .about-text p {
-          font-size: 1.1rem;
+        .about-bio {
+          font-size: 1rem;
           line-height: 1.8;
+          color: var(--text-secondary);
           margin-bottom: 2rem;
         }
 
         .about-stats {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          gap: 2rem;
+          gap: 1rem;
           margin-bottom: 2rem;
         }
 
         .stat {
           text-align: center;
-          padding: 2rem;
-          background: rgba(0, 0, 0, 0.2);
-          backdrop-filter: blur(20px);
-          border: 1px solid rgba(255, 255, 255, 0.08);
-          border-radius: 1.5rem;
-          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-          position: relative;
-          overflow: hidden;
-          box-shadow: 
-            0 4px 20px rgba(0, 0, 0, 0.15),
-            inset 0 1px 0 rgba(255, 255, 255, 0.08);
+          padding: 1.25rem 1rem;
+          background: var(--bg-card);
+          border: 1px solid var(--border-color);
+          border-radius: 10px;
         }
 
-        .stat::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          height: 3px;
-          background: linear-gradient(90deg, 
-            rgba(102, 126, 234, 0.6), 
-            rgba(118, 75, 162, 0.6), 
-            rgba(240, 147, 251, 0.6)
-          );
-          border-radius: 1.5rem 1.5rem 0 0;
-        }
-
-        .stat:hover {
-          transform: translateY(-10px);
-          background: rgba(0, 0, 0, 0.3);
-          box-shadow: 
-            0 15px 35px rgba(0, 0, 0, 0.25),
-            inset 0 1px 0 rgba(255, 255, 255, 0.15);
-        }
-
-        .stat h3 {
-          font-size: 2.5rem;
-          background: var(--gradient-1);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          margin-bottom: 0.5rem;
+        .stat-number {
+          display: block;
+          font-size: 1.75rem;
           font-weight: 700;
+          color: var(--primary-color);
+          margin-bottom: 0.25rem;
         }
 
-        .stat p {
-          color: rgba(255, 255, 255, 0.8);
-          margin: 0;
-          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        .stat-label {
+          font-size: 0.8rem;
+          color: var(--text-light);
         }
 
         .about-info {
           display: flex;
           flex-direction: column;
-          gap: 1rem;
+          gap: 0.75rem;
         }
 
         .info-item {
           display: flex;
           align-items: center;
           gap: 1rem;
-          padding: 1rem;
-          background: rgba(0, 0, 0, 0.15);
-          backdrop-filter: blur(10px);
-          border: 1px solid rgba(255, 255, 255, 0.05);
-          border-radius: 0.75rem;
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+          padding: 0.75rem 1rem;
+          background: var(--bg-card);
+          border: 1px solid var(--border-color);
+          border-radius: 8px;
         }
 
-        .info-item strong {
-          color: rgba(255, 255, 255, 0.9);
-          min-width: 80px;
-          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        .info-label {
+          font-size: 0.8rem;
+          color: var(--text-light);
+          min-width: 70px;
+          font-weight: 500;
         }
 
-        .info-item {
-          color: rgba(255, 255, 255, 0.7);
+        .info-value {
+          color: var(--text-secondary);
+          font-size: 0.9rem;
         }
 
         .about-image {
@@ -180,9 +145,10 @@ const About = ({ data }) => {
 
         .about-image img {
           width: 100%;
-          max-width: 300px;
-          border-radius: 1rem;
-          box-shadow: var(--shadow-lg);
+          max-width: 280px;
+          border-radius: 12px;
+          border: 1px solid var(--border-color);
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
         }
 
         @media (max-width: 768px) {
@@ -191,16 +157,20 @@ const About = ({ data }) => {
             gap: 2rem;
           }
 
+          .about-image {
+            order: -1;
+          }
+
           .about-stats {
-            grid-template-columns: 1fr;
-            gap: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
           }
 
           .stat {
-            padding: 1rem;
+            padding: 1rem 0.5rem;
           }
 
-          .stat h3 {
+          .stat-number {
             font-size: 1.5rem;
           }
         }

@@ -4,51 +4,55 @@ export const portfolioData = {
     name: "Aditya",
     title: "Full Stack Developer (Backend-Oriented)",
     subtitle: "Frontend & Backend Developer",
-    email: "email@example.com",
-    phone: "+62 812-3456-7890",
-    location: "Jakarta, Indonesia",
-    bio: "Full Stack Developer (Backend-Oriented) dengan pengalaman membangun API dan aplikasi web yang dilengkapi audit log untuk mempercepat proses debugging dan troubleshooting. Pernah mengembangkan Courier Management System, Petty Cash System, Messaging Channel System, E-Commerce Application, dan lain-lain. Terbiasa melakukan integrasi dengan berbagai sistem lain serta berusaha mampu mendesain solusi secara mandiri ketika kebutuhan atau arahan dari project manager belum sepenuhnya tersedia.",
-    avatar: "/image/adet.png", // Letakkan foto di folder public
-    resume: "https://drive.google.com/file/d/1234567890abcdef/view?usp=sharing" // CV dummy URL
+    email: "aditgumay68@gmail.com",
+    phone: "+62 895-7012-39090",
+    location: "Jakarta Selatan, Indonesia",
+    address: "JL. Mampang Prapatan VIII, RT.004/001, Kel. Tegal Parang, 12790 Jakarta Selatan",
+    birthDate: "19 April 2001",
+    birthPlace: "Pandeglang",
+    nationality: "WNI",
+    bio: "Full Stack Developer dengan pengalaman lebih dari 6 tahun dalam pengembangan perangkat lunak. Terbiasa terlibat dalam proses pengembangan mulai dari analisis kebutuhan hingga pemeliharaan sistem, dengan fokus pada kualitas, keandalan, dan penyelesaian masalah secara efektif.",
+    avatar: "/image/adet.png",
+    resume: "https://drive.google.com/file/d/1234567890abcdef/view?usp=sharing"
   },
 
   // Social Media Links
   social: {
-    github: "https://github.com/adityauser",
-    linkedin: "https://linkedin.com/in/aditya-developer",
-    instagram: "https://instagram.com/aditya.dev",
-    twitter: "https://twitter.com/adityacode",
-    website: "https://aditya-portfolio.vercel.app"
+    github: "https://github.com/kdnknz",
+    linkedin: "http://linkedin.com/in/aditya-392174237",
+    instagram: "",
+    twitter: "",
+    website: "https://adityeuh.vercel.app"
   },
 
   // Skills
   skills: {
     frontend: [
-      { name: "HTML5", icon: "🌐", color: "#E34F26", level: 90 },
-      { name: "JavaScript", icon: "⚡", color: "#F7DF1E", level: 85 },
-      { name: "React.js", icon: "⚛️", color: "#61DAFB", level: 60 },
-      { name: "Bootstrap", icon: "🅱️", color: "#7952B3", level: 90 }
+      { name: "HTML5", icon: "\uD83C\uDF10", color: "#E34F26", level: 90 },
+      { name: "JavaScript", icon: "\u26A1", color: "#F7DF1E", level: 85 },
+      { name: "TypeScript", icon: "\uD83D\uDD37", color: "#3178C6", level: 75 },
+      { name: "React.js", icon: "\u269B\uFE0F", color: "#61DAFB", level: 75 },
+      { name: "Bootstrap", icon: "\uD83C\uDD71\uFE0F", color: "#7952B3", level: 90 }
     ],
     backend: [
-      { name: "PHP", icon: "🐘", color: "#777BB4", level: 90 },
-      { name: "Laravel", icon: "🔥", color: "#777BB4", level: 90 },
-      { name: "CakePHP", icon: "🎂", color: "#777BB4", level: 90 },
-      { name: "Node.js", icon: "🟢", color: "#339933", level: 75 },
-      { name: "Express.js", icon: "🚀", color: "#339933", level: 70 },
-      { name: "Go", icon: "🐹", color: "#339933", level: 70 },
-      { name: "REST API", icon: "�", color: "#FF6B35", level: 90 }
+      { name: "PHP", icon: "\uD83D\uDC18", color: "#777BB4", level: 90 },
+      { name: "Laravel", icon: "\uD83D\uDD25", color: "#FF2D20", level: 90 },
+      { name: "Node.js", icon: "\uD83D\uDFE2", color: "#339933", level: 80 },
+      { name: "REST API", icon: "\uD83D\uDD17", color: "#FF6B35", level: 90 },
+      { name: "Go", icon: "\uD83D\uDC39", color: "#00ADD8", level: 65 },
+      { name: "Java", icon: "\u2615", color: "#ED8B00", level: 60 },
+      { name: "Python", icon: "\uD83D\uDC0D", color: "#3776AB", level: 60 }
     ],
     database: [
-      { name: "PostgreSQL", icon: "🐘", color: "#336791", level: 90 },
-      { name: "MySQL", icon: "🐬", color: "#4479A1", level: 90 },
-      { name: "Firebase", icon: "�", color: "#FFCA28", level: 60 }
+      { name: "PostgreSQL", icon: "\uD83D\uDC18", color: "#336791", level: 90 },
+      { name: "MySQL", icon: "\uD83D\uDC2C", color: "#4479A1", level: 90 }
     ],
     tools: [
-      { name: "VS Code", icon: "�", color: "#007ACC", level: 95 },
-      { name: "Postman", icon: "📮", color: "#FF6C37", level: 80 },
-      { name: "Git", icon: "📝", color: "#F05032", level: 70 },
-      { name: "GitHub", icon: "�", color: "#380395ff", level: 70 },
-      { name: "Docker", icon: "🐳", color: "#2496ED", level: 70 }
+      { name: "VS Code", icon: "\uD83D\uDCBB", color: "#007ACC", level: 95 },
+      { name: "Postman", icon: "\uD83D\uDCEE", color: "#FF6C37", level: 80 },
+      { name: "Git", icon: "\uD83D\uDCDD", color: "#F05032", level: 75 },
+      { name: "GitHub", icon: "\uD83D\uDC19", color: "#181717", level: 75 },
+      { name: "Docker", icon: "\uD83D\uDC33", color: "#2496ED", level: 70 }
     ]
   },
 
@@ -56,32 +60,42 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
-      title: "E-Commerce Website",
-      description: "Website e-commerce lengkap dengan sistem pembayaran dan manajemen produk",
+      title: "E-Commerce Application",
+      description: "Aplikasi e-commerce lengkap dengan manajemen produk, keranjang belanja, dan sistem pembayaran",
       image: "/image/vaksin.jpeg",
-      technologies: ["React.js", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "https://ecommerce-demo.vercel.app",
-      githubUrl: "https://github.com/adityauser/ecommerce-website",
+      technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+      liveUrl: "",
+      githubUrl: "https://github.com/kdnknz",
       featured: true
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "Aplikasi manajemen tugas dengan fitur real-time collaboration",
+      title: "Courier Management System",
+      description: "Sistem manajemen pengiriman kurir dengan tracking paket dan manajemen rute pengiriman",
       image: "/image/vaksin.jpeg",
-      technologies: ["Vue.js", "Laravel", "MySQL", "Socket.io"],
-      liveUrl: "https://taskmanager-app.netlify.app",
-      githubUrl: "https://github.com/adityauser/task-management-app",
+      technologies: ["Laravel", "Node.js", "PostgreSQL", "REST API"],
+      liveUrl: "",
+      githubUrl: "https://github.com/kdnknz",
       featured: true
     },
     {
       id: 3,
-      title: "Portfolio Website",
-      description: "Website portfolio responsive dengan desain modern dan clean",
+      title: "Petty Cash System",
+      description: "Sistem pengelolaan kas kecil perusahaan dengan laporan keuangan dan audit trail",
       image: "/image/vaksin.jpeg",
-      technologies: ["React.js", "Tailwind CSS", "Vite"],
-      liveUrl: "https://aditya-portfolio.vercel.app",
-      githubUrl: "https://github.com/adityauser/portfolio-website",
+      technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+      liveUrl: "",
+      githubUrl: "https://github.com/kdnknz",
+      featured: true
+    },
+    {
+      id: 4,
+      title: "Portfolio Website",
+      description: "Website portfolio personal dengan desain modern, animasi interaktif, dan responsive design",
+      image: "/image/vaksin.jpeg",
+      technologies: ["React.js", "Vite", "JavaScript"],
+      liveUrl: "https://adityeuh.vercel.app",
+      githubUrl: "https://github.com/kdnknz",
       featured: false
     }
   ],
@@ -90,24 +104,10 @@ export const portfolioData = {
   experience: [
     {
       id: 1,
-      company: "PT. Tech Solutions",
-      position: "Frontend Developer",
-      period: "2023 - Sekarang",
-      description: "Mengembangkan aplikasi web menggunakan React.js dan Vue.js, berkolaborasi dengan tim backend untuk integrasi API"
-    },
-    {
-      id: 2,
-      company: "CV. Digital Agency",
-      position: "Web Developer",
-      period: "2022 - 2023",
-      description: "Membuat website company profile dan e-commerce menggunakan Laravel dan WordPress"
-    },
-    {
-      id: 3,
-      company: "Freelancer",
+      company: "PT. Sentra Inovasi Solusindo",
       position: "Full Stack Developer",
-      period: "2021 - 2022",
-      description: "Mengerjakan berbagai project web development untuk klien lokal dan internasional"
+      period: "2019 - Sekarang",
+      description: "Bekerja sebagai Full Stack Developer selama lebih dari 6 tahun. Terlibat dalam pengembangan berbagai sistem mulai dari analisis kebutuhan hingga pemeliharaan. Mengembangkan Courier Management System, Petty Cash System, Messaging Channel System, E-Commerce Application, dan berbagai proyek lainnya menggunakan Laravel, Node.js, PostgreSQL, dan MySQL."
     }
   ],
 
@@ -115,24 +115,10 @@ export const portfolioData = {
   education: [
     {
       id: 1,
-      institution: "Universitas Indonesia",
+      institution: "Universitas (S1 Teknik Informatika)",
       degree: "S1 Teknik Informatika",
-      period: "2019 - 2023",
-      description: "Fokus pada pengembangan software dan web development. IPK: 3.75/4.00. Aktif dalam organisasi mahasiswa dan berbagai kompetisi programming."
-    },
-    {
-      id: 2,
-      institution: "SMA Negeri 1 Jakarta",
-      degree: "Ilmu Pengetahuan Alam (IPA)",
-      period: "2016 - 2019",
-      description: "Jurusan IPA dengan fokus pada Matematika dan Fisika. Aktif dalam ekstrakurikuler robotika dan olimpiade sains."
-    },
-    {
-      id: 3,
-      institution: "Bootcamp Full Stack Developer",
-      degree: "Sertifikat Full Stack Web Development",
-      period: "2011",
-      description: "Intensive bootcamp covering modern web technologies including React.js, Node.js, dan database management. Menyelesaikan 5 project portfolio."
+      period: "Sep 2021 - Sep 2025",
+      description: "Program studi Teknik Informatika dengan fokus pada pengembangan perangkat lunak dan sistem informasi. IPK: 3.79/4.00."
     }
   ],
 
@@ -141,26 +127,26 @@ export const portfolioData = {
     {
       id: 1,
       title: "Web Development",
-      description: "Pembuatan website responsive dan modern sesuai kebutuhan bisnis Anda",
-      icon: "💻"
+      description: "Pembuatan website responsive dan modern sesuai kebutuhan bisnis Anda, mulai dari company profile hingga aplikasi web kompleks",
+      icon: "\uD83D\uDCBB"
     },
     {
       id: 2,
-      title: "Mobile App Development",
-      description: "Pengembangan aplikasi mobile cross-platform menggunakan React Native",
-      icon: "📱"
+      title: "Backend Development",
+      description: "Pengembangan server-side application, REST API, dan sistem manajemen database yang scalable dan reliable",
+      icon: "\uD83D\uDD27"
     },
     {
       id: 3,
-      title: "UI/UX Design",
-      description: "Desain antarmuka yang user-friendly dan menarik untuk meningkatkan user experience",
-      icon: "🎨"
+      title: "API Development",
+      description: "Perancangan dan pengembangan REST API yang terstruktur, aman, dan terdokumentasi dengan baik",
+      icon: "\uD83D\uDD17"
     },
     {
       id: 4,
-      title: "API Development",
-      description: "Pembuatan REST API yang scalable dan secure untuk kebutuhan aplikasi",
-      icon: "🔗"
+      title: "Database Design",
+      description: "Perancangan skema database yang efisien dan optimal menggunakan PostgreSQL atau MySQL",
+      icon: "\uD83D\uDDC4\uFE0F"
     }
   ],
 
@@ -168,75 +154,147 @@ export const portfolioData = {
   certificates: [
     {
       id: 1,
-      title: "React Developer Certification",
-      issuer: "Meta (Facebook)",
-      date: "2023",
-      description: "Comprehensive certification covering React fundamentals, hooks, state management, and advanced patterns",
+      title: "Database Management System",
+      issuer: "Dicoding / Platform Sertifikasi",
+      date: "2024",
+      description: "Sertifikasi di bidang Database Management System mencakup konsep dan implementasi database relasional",
       image: "/image/vaksin.jpeg",
-      credentialUrl: "https://coursera.org/verify/professional-certificates/react-developer-meta",
-      certificateUrl: "https://drive.google.com/file/d/1234567890/view?usp=sharing",
-      credentialId: "REACT2023001",
-      skills: ["React.js", "JavaScript", "JSX", "Hooks", "State Management"]
+      credentialUrl: "",
+      certificateUrl: "/image/cert/cert_dbms.pdf",
+      credentialId: "",
+      skills: ["Database", "SQL", "DBMS"]
     },
     {
       id: 2,
-      title: "Full Stack Web Development",
-      issuer: "freeCodeCamp",
-      date: "2023",
-      description: "300-hour curriculum covering responsive web design, JavaScript algorithms, frontend libraries, and backend development",
+      title: "HR & Database Management System",
+      issuer: "Dicoding / Platform Sertifikasi",
+      date: "2024",
+      description: "Sertifikasi pengelolaan HR dan sistem manajemen database dalam konteks bisnis",
       image: "/image/vaksin.jpeg",
-      credentialUrl: "https://freecodecamp.org/certification/adityauser/full-stack-web-development",
-      certificateUrl: "https://drive.google.com/file/d/0987654321/view?usp=sharing",
-      credentialId: "FCC2023002",
-      skills: ["HTML5", "CSS3", "JavaScript", "Node.js", "MongoDB", "Express.js"]
+      credentialUrl: "",
+      certificateUrl: "/image/cert/cert_hr_dbms.pdf",
+      credentialId: "",
+      skills: ["HR Management", "Database", "DBMS"]
     },
     {
       id: 3,
-      title: "AWS Cloud Practitioner",
-      issuer: "Amazon Web Services",
+      title: "PHP Pemula",
+      issuer: "Dicoding",
       date: "2023",
-      description: "Foundational understanding of AWS Cloud concepts, services, security, architecture, pricing, and support",
+      description: "Sertifikasi pemrograman PHP untuk pemula mencakup dasar-dasar bahasa PHP dan pengembangan web",
       image: "/image/vaksin.jpeg",
-      credentialUrl: "https://aws.amazon.com/verification/AWSCP2023003",
-      certificateUrl: "https://drive.google.com/file/d/1122334455/view?usp=sharing",
-      credentialId: "AWS2023003",
-      skills: ["AWS", "Cloud Computing", "EC2", "S3", "Lambda", "RDS"]
+      credentialUrl: "",
+      certificateUrl: "/image/cert/cert_php_pemula.pdf",
+      credentialId: "",
+      skills: ["PHP", "Web Development"]
     },
     {
       id: 4,
-      title: "Google Analytics Certified",
-      issuer: "Google",
-      date: "2022",
-      description: "Proficiency in Google Analytics including setup, configuration, data collection, and reporting",
+      title: "PostgreSQL",
+      issuer: "Platform Sertifikasi",
+      date: "2023",
+      description: "Sertifikasi penggunaan dan pengelolaan database PostgreSQL",
       image: "/image/vaksin.jpeg",
-      credentialUrl: "https://skillshop.exceedlms.com/student/award/GA2022004",
-      certificateUrl: "https://drive.google.com/file/d/5566778899/view?usp=sharing",
-      credentialId: "GA2022004",
-      skills: ["Google Analytics", "Data Analysis", "Web Analytics", "Reporting"]
+      credentialUrl: "",
+      certificateUrl: "/image/cert/cert_postgresql.pdf",
+      credentialId: "",
+      skills: ["PostgreSQL", "Database", "SQL"]
     },
     {
       id: 5,
-      title: "JavaScript Algorithms and Data Structures",
-      issuer: "freeCodeCamp",
-      date: "2022",
-      description: "Comprehensive course covering JavaScript fundamentals, ES6, regular expressions, debugging, and algorithm scripting",
+      title: "SQL Basic",
+      issuer: "HackerRank",
+      date: "2023",
+      description: "Sertifikasi kemampuan dasar SQL mencakup query, join, dan manipulasi data",
       image: "/image/vaksin.jpeg",
-      credentialUrl: "https://freecodecamp.org/certification/adityauser/javascript-algorithms-data-structures",
-      certificateUrl: "https://drive.google.com/file/d/9988776655/view?usp=sharing",
-      credentialId: "FCC2022005",
-      skills: ["JavaScript", "ES6", "Algorithms", "Data Structures", "Problem Solving"]
+      credentialUrl: "",
+      certificateUrl: "/image/cert/cert_sql_basic.pdf",
+      credentialId: "",
+      skills: ["SQL", "Database"]
     },
     {
       id: 6,
-      title: "UI/UX Design Specialization",
-      issuer: "California Institute of the Arts",
-      date: "2022",
-      description: "Comprehensive program covering design thinking, user research, prototyping, and visual design principles",
+      title: "SQL for Data Science",
+      issuer: "Platform Sertifikasi",
+      date: "2023",
+      description: "Sertifikasi penggunaan SQL dalam konteks data science dan analisis data",
       image: "/image/vaksin.jpeg",
-      credentialUrl: "https://coursera.org/verify/specialization/CALARTS2022006",
-      certificateUrl: "https://drive.google.com/file/d/4433221100/view?usp=sharing",
-      credentialId: "CALARTS2022006",
-      skills: ["UI Design", "UX Research", "Prototyping", "Figma", "Design Thinking"]
+      credentialUrl: "",
+      certificateUrl: "/image/cert/cert_sql_data_science.pdf",
+      credentialId: "",
+      skills: ["SQL", "Data Science", "Data Analysis"]
+    },
+    {
+      id: 7,
+      title: "Web Development",
+      issuer: "Platform Sertifikasi",
+      date: "2023",
+      description: "Sertifikasi pengembangan web mencakup frontend dan backend development",
+      image: "/image/vaksin.jpeg",
+      credentialUrl: "",
+      certificateUrl: "/image/cert/cert_web_dev.pdf",
+      credentialId: "",
+      skills: ["Web Development", "HTML", "CSS", "JavaScript"]
+    },
+    {
+      id: 8,
+      title: "Sertifikasi Kompetensi (UKOM)",
+      issuer: "Lembaga Sertifikasi Profesi",
+      date: "2024",
+      description: "Uji kompetensi profesi di bidang teknologi informasi",
+      image: "/image/vaksin.jpeg",
+      credentialUrl: "",
+      certificateUrl: "/image/cert/cert_ukom.pdf",
+      credentialId: "",
+      skills: ["Kompetensi IT", "Profesional"]
+    },
+    {
+      id: 9,
+      title: "Sertifikat Magang",
+      issuer: "PT. Sentra Inovasi Solusindo",
+      date: "2022",
+      description: "Sertifikat penyelesaian program magang sebagai Full Stack Developer",
+      image: "/image/vaksin.jpeg",
+      credentialUrl: "",
+      certificateUrl: "/image/cert/cert_magang.pdf",
+      credentialId: "",
+      skills: ["Full Stack Development", "Laravel", "PHP"]
+    },
+    {
+      id: 10,
+      title: "Futsal Championship",
+      issuer: "Panitia Turnamen",
+      date: "2023",
+      description: "Sertifikat partisipasi dalam kejuaraan futsal",
+      image: "/image/vaksin.jpeg",
+      credentialUrl: "",
+      certificateUrl: "/image/cert/cert_futsal.pdf",
+      credentialId: "",
+      skills: ["Futsal", "Olahraga"]
+    },
+    {
+      id: 11,
+      title: "Seminar Technopreneurship",
+      issuer: "Penyelenggara Seminar",
+      date: "2023",
+      description: "Sertifikat keikutsertaan dalam seminar technopreneurship tentang inovasi teknologi dan kewirausahaan",
+      image: "/image/vaksin.jpeg",
+      credentialUrl: "",
+      certificateUrl: "/image/cert/Sertifikat Seminar Technopreneurship.pdf.pdf",
+      credentialId: "",
+      skills: ["Technopreneurship", "Inovasi", "Kewirausahaan"]
+    },
+    {
+      id: 12,
+      title: "Webinar Swadharma",
+      issuer: "Swadharma",
+      date: "2023",
+      description: "Sertifikat keikutsertaan dalam webinar Swadharma",
+      image: "/image/vaksin.jpeg",
+      credentialUrl: "",
+      certificateUrl: "/image/cert/Sertifikasi Webinar Swadharma Aditya.pdf",
+      credentialId: "",
+      skills: ["Webinar", "Pengembangan Diri"]
     }
   ]
 }

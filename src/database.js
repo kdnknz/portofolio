@@ -60,33 +60,60 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
-      title: "E-Commerce Application",
-      description: "Aplikasi e-commerce lengkap dengan manajemen produk, keranjang belanja, dan sistem pembayaran",
+      title: "HRMS — Absensi",
+      description: "Human Resource Management System dengan fitur absensi karyawan, rekap kehadiran, dan manajemen data pegawai",
       technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
       liveUrl: "",
-      githubUrl: "https://github.com/kdnknz",
+      githubUrl: "",
       featured: true
     },
     {
       id: 2,
-      title: "Courier Management System",
-      description: "Sistem manajemen pengiriman kurir dengan tracking paket dan manajemen rute pengiriman",
-      technologies: ["Laravel", "Node.js", "PostgreSQL", "REST API"],
+      title: "Messaging Channel System",
+      description: "Sistem pengiriman pesan terintegrasi dengan Meta API untuk mengirim WhatsApp secara otomatis ke pelanggan",
+      technologies: ["Laravel", "Node.js", "REST API", "Meta API", "WhatsApp"],
       liveUrl: "",
-      githubUrl: "https://github.com/kdnknz",
+      githubUrl: "",
       featured: true
     },
     {
       id: 3,
-      title: "Petty Cash System",
-      description: "Sistem pengelolaan kas kecil perusahaan dengan laporan keuangan dan audit trail",
+      title: "E-Commerce Application",
+      description: "Aplikasi e-commerce lengkap dengan manajemen produk, keranjang belanja, dan sistem pembayaran",
       technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
       liveUrl: "",
-      githubUrl: "https://github.com/kdnknz",
+      githubUrl: "",
       featured: true
     },
     {
       id: 4,
+      title: "LSM — Laporan Stok Malam",
+      description: "Sistem laporan stok malam untuk Bakmie GM, mencatat dan merekap stok bahan baku setiap akhir hari operasional",
+      technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+      liveUrl: "",
+      githubUrl: "",
+      featured: true
+    },
+    {
+      id: 5,
+      title: "Courier Management System",
+      description: "Sistem manajemen pengiriman kurir dengan tracking paket dan manajemen rute pengiriman",
+      technologies: ["Laravel", "Node.js", "PostgreSQL", "REST API"],
+      liveUrl: "",
+      githubUrl: "",
+      featured: false
+    },
+    {
+      id: 6,
+      title: "Petty Cash System",
+      description: "Sistem pengelolaan kas kecil perusahaan dengan laporan keuangan dan audit trail",
+      technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+      liveUrl: "",
+      githubUrl: "",
+      featured: false
+    },
+    {
+      id: 7,
       title: "Portfolio Website",
       description: "Website portfolio personal dengan desain modern, animasi interaktif, dan responsive design",
       technologies: ["React.js", "Vite", "JavaScript"],

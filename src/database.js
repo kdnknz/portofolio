@@ -101,9 +101,26 @@ export const portfolioData = {
     {
       id: 1,
       company: "PT. Sentra Inovasi Solusindo",
-      position: "Full Stack Developer",
-      period: "2019 - Sekarang",
-      description: "Bekerja sebagai Full Stack Developer selama lebih dari 6 tahun. Terlibat dalam pengembangan berbagai sistem mulai dari analisis kebutuhan hingga pemeliharaan. Mengembangkan Courier Management System, Petty Cash System, Messaging Channel System, E-Commerce Application, dan berbagai proyek lainnya menggunakan Laravel, Node.js, PostgreSQL, dan MySQL."
+      position: "Programmer",
+      location: "Jakarta Utara",
+      period: "Mei 2022 - Sekarang",
+      description: "Mengembangkan berbagai proyek penting seperti HRMS, CMS, E-Commerce, E-Ticketing, dan Pengelolaan Petty Cash serta proyek lainnya."
+    },
+    {
+      id: 2,
+      company: "PT. Sentra Inovasi Solusindo",
+      position: "Junior Programmer",
+      location: "Jakarta Utara",
+      period: "Nov 2019 - Mei 2022",
+      description: "Berperan sebagai Junior Programmer dalam tim pengembangan software, terlibat dalam proses pengembangan aplikasi dan sistem internal perusahaan."
+    },
+    {
+      id: 3,
+      company: "Kantor Pelayanan Pajak Pratama Cilogon",
+      position: "Karyawan Magang",
+      location: "Cilegon",
+      period: "2019",
+      description: "Ditempatkan pada Subbagian Umum Dan Kepatuhan Internal (SUKI). Mengerjakan laporan keluar masuk barang berupa ATK."
     }
   ],
 

@@ -19,7 +19,7 @@ const Experience = ({ data }) => {
                   <h3>{exp.position}</h3>
                   <span className="timeline-period">{exp.period}</span>
                 </div>
-                <h4>{exp.company}</h4>
+                <h4>{exp.company}{exp.location ? ` · ${exp.location}` : ''}</h4>
                 <p>{exp.description}</p>
               </div>
             </div>

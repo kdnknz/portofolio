@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV — Aditya | Full Stack Developer</title>
+  <style>
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 13px;
+      color: #1a1a2e;
+      background: #f0f2f5;
+      line-height: 1.55;
+    }
+
+    /* ── Print Button (screen only) ── */
+    .print-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(37,99,235,0.35);
+      z-index: 100;
+      transition: background 0.2s;
+    }
+    .print-btn:hover { background: #1d4ed8; }
+
+    /* ── Page Wrapper ── */
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 30px auto;
+      background: #fff;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.12);
+      display: grid;
+      grid-template-columns: 68mm 1fr;
+    }
+
+    /* ════════════════════════
+       LEFT SIDEBAR
+    ════════════════════════ */
+    .sidebar {
+      background: #1a1a2e;
+      color: #e2e8f0;
+      padding: 32px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+    }
+
+    /* Avatar */
+    .avatar-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      border: 3px solid #3b82f6;
+      object-fit: cover;
+      background: #2d2d4e;
+    }
+    .avatar-name {
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      letter-spacing: 0.3px;
+    }
+    .avatar-title {
+      font-size: 11px;
+      color: #93c5fd;
+      text-align: center;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    /* Sidebar section title */
+    .s-title {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: #3b82f6;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #2d2d4e;
+    }
+
+    /* Contact */
+    .contact-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+    .contact-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 11.5px; color: #cbd5e1; }
+    .contact-list .icon { color: #60a5fa; font-size: 12px; margin-top: 1px; flex-shrink: 0; }
+    .contact-list a { color: #93c5fd; text-decoration: none; word-break: break-all; }
+
+    /* Biodata */
+    .bio-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+    .bio-list li { display: grid; grid-template-columns: 80px 1fr; font-size: 11px; color: #cbd5e1; gap: 4px; }
+    .bio-list .label { color: #94a3b8; font-weight: 600; }
+
+    /* Skills */
+    .skill-group { margin-bottom: 12px; }
+    .skill-group-label { font-size: 10px; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+    .skill-tag {
+      background: #2d2d4e;
+      color: #93c5fd;
+      border: 1px solid #3b4a6b;
+      padding: 2px 8px;
+      border-radius: 20px;
+      font-size: 10.5px;
+      font-weight: 500;
+    }
+
+    /* ════════════════════════
+       RIGHT MAIN CONTENT
+    ════════════════════════ */
+    .main {
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    /* Section */
+    .section {}
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #1e3a5f;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #2563eb;
+      margin-bottom: 14px;
+    }
+
+    /* Bio / summary */
+    .bio-text {
+      font-size: 12px;
+      color: #374151;
+      line-height: 1.65;
+    }
+
+    /* Timeline (experience & education) */
+    .timeline { display: flex; flex-direction: column; gap: 14px; }
+    .tl-item { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; }
+    .tl-position { font-size: 13px; font-weight: 700; color: #1a1a2e; grid-column: 1; }
+    .tl-period {
+      font-size: 10.5px;
+      color: #2563eb;
+      font-weight: 600;
+      background: #eff6ff;
+      padding: 2px 8px;
+      border-radius: 20px;
+      white-space: nowrap;
+      align-self: start;
+      grid-column: 2;
+      grid-row: 1 / 3;
+    }
+    .tl-company { font-size: 11.5px; color: #4b5563; font-weight: 500; grid-column: 1; }
+    .tl-desc { font-size: 11.5px; color: #6b7280; line-height: 1.55; grid-column: 1 / 3; margin-top: 4px; }
+
+    /* Projects */
+    .projects-list { display: flex; flex-direction: column; gap: 10px; }
+    .proj-item { border-left: 3px solid #2563eb; padding-left: 10px; }
+    .proj-title { font-size: 12.5px; font-weight: 700; color: #1a1a2e; }
+    .proj-desc { font-size: 11px; color: #6b7280; margin: 2px 0 5px; line-height: 1.5; }
+    .proj-tech { display: flex; flex-wrap: wrap; gap: 4px; }
+    .proj-tech span {
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+      padding: 1px 7px;
+      border-radius: 20px;
+      font-size: 10px;
+      font-weight: 600;
+    }
+
+    /* Certificates */
+    .cert-list { display: flex; flex-direction: column; gap: 6px; }
+    .cert-item { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+    .cert-name { font-size: 11.5px; font-weight: 600; color: #1a1a2e; }
+    .cert-issuer { font-size: 10.5px; color: #6b7280; }
+    .cert-year { font-size: 10.5px; color: #2563eb; font-weight: 600; white-space: nowrap; }
+
+    /* ── Print Styles ── */
+    @media print {
+      @page { size: A4; margin: 0; }
+      body { background: #fff; }
+      .print-btn { display: none; }
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="print-btn" onclick="window.print()">🖨️ Print / Save PDF</button>
+
+  <div class="page">
+
+    <!-- ══ SIDEBAR ══ -->
+    <aside class="sidebar">
+
+      <!-- Avatar & Name -->
+      <div class="avatar-wrap">
+        <img class="avatar" src="public/image/adet.png" alt="Aditya" onerror="this.style.display='none'" />
+        <div class="avatar-name">Aditya</div>
+        <div class="avatar-title">Full Stack Developer<br>(Backend-Oriented)</div>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <div class="s-title">Kontak</div>
+        <ul class="contact-list">
+          <li>
+            <span class="icon">✉</span>
+            <a href="mailto:aditgumay68@gmail.com">aditgumay68@gmail.com</a>
+          </li>
+          <li>
+            <span class="icon">📞</span>
+            <span>+62 895-7012-39090</span>
+          </li>
+          <li>
+            <span class="icon">📍</span>
+            <span>JL. Mampang Prapatan VIII, RT.004/001, Kel. Tegal Parang, 12790 Jakarta Selatan</span>
+          </li>
+          <li>
+            <span class="icon">🔗</span>
+            <a href="http://linkedin.com/in/aditya-392174237" target="_blank">linkedin.com/in/aditya-392174237</a>
+          </li>
+          <li>
+            <span class="icon">🐙</span>
+            <a href="https://github.com/kdnknz" target="_blank">github.com/kdnknz</a>
+          </li>
+          <li>
+            <span class="icon">🌐</span>
+            <a href="https://adityeuh.vercel.app" target="_blank">adityeuh.vercel.app</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Biodata -->
+      <div>
+        <div class="s-title">Data Diri</div>
+        <ul class="bio-list">
+          <li><span class="label">Tgl. Lahir</span><span>19 April 2001</span></li>
+          <li><span class="label">Tempat</span><span>Pandeglang</span></li>
+          <li><span class="label">Kelamin</span><span>Laki-laki</span></li>
+          <li><span class="label">Kebangsaan</span><span>WNI</span></li>
+        </ul>
+      </div>
+
+      <!-- Skills -->
+      <div>
+        <div class="s-title">Keahlian</div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Backend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Laravel</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">REST API</span>
+            <span class="skill-tag">Go</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Frontend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Database</div>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MySQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Tools</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- ══ MAIN ══ -->
+    <main class="main">
+
+      <!-- Profil -->
+      <div class="section">
+        <div class="section-title">Profil</div>
+        <p class="bio-text">
+          Full Stack Developer dengan pengalaman lebih dari 6 tahun dalam pengembangan perangkat lunak.
+          Terbiasa terlibat dalam proses pengembangan mulai dari analisis kebutuhan hingga pemeliharaan sistem,
+          dengan fokus pada kualitas, keandalan, dan penyelesaian masalah secara efektif.
+        </p>
+      </div>
+
+      <!-- Pengalaman Kerja -->
+      <div class="section">
+        <div class="section-title">Pengalaman Kerja</div>
+        <div class="timeline">
+
+          <div class="tl-item">
+            <div class="tl-position">Programmer</div>
+            <div class="tl-period">Mei 2022 – Sekarang</div>
+            <div class="tl-company">PT. Sentra Inovasi Solusindo &middot; Jakarta Utara</div>
+            <div class="tl-desc">
+              Mengembangkan berbagai proyek penting seperti HRMS (Absensi), Messaging Channel System (integrasi Meta/WhatsApp),
+              E-Commerce, E-Ticketing, Courier Management System, dan Pengelolaan Petty Cash.
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-position">Junior Programmer</div>
+            <div class="tl-period">Nov 2019 – Mei 2022</div>
+            <div class="tl-company">PT. Sentra Inovasi Solusindo &middot; Jakarta Utara</div>
+            <div class="tl-desc">
+              Berperan dalam tim pengembangan software, terlibat dalam proses pengembangan aplikasi
+              dan sistem internal perusahaan.
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-position">Karyawan Magang</div>
+            <div class="tl-period">2019</div>
+            <div class="tl-company">Kantor Pelayanan Pajak Pratama Cilogon &middot; Cilegon</div>
+            <div class="tl-desc">
+              Ditempatkan pada Subbagian Umum Dan Kepatuhan Internal (SUKI).
+              Mengerjakan laporan keluar masuk barang berupa ATK.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Pendidikan -->
+      <div class="section">
+        <div class="section-title">Pendidikan</div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-position">S1 Teknik Informatika</div>
+            <div class="tl-period">Sep 2021 – Sep 2025</div>
+            <div class="tl-company">Universitas</div>
+            <div class="tl-desc">IPK: 3.79 / 4.00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyek -->
+      <div class="section">
+        <div class="section-title">Proyek</div>
+        <div class="projects-list">
+
+          <div class="proj-item">
+            <div class="proj-title">HRMS — Absensi</div>
+            <div class="proj-desc">Human Resource Management System dengan fitur absensi karyawan, rekap kehadiran, dan manajemen data pegawai.</div>
+            <div class="proj-tech">
+              <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+            </div>
+          </div>
+
+          <div class="proj-item">
+            <div class="proj-title">Messaging Channel System</div>
+            <div class="proj-desc">Sistem pengiriman pesan terintegrasi dengan Meta API untuk mengirim WhatsApp secara otomatis ke pelanggan.</div>
+            <div class="proj-tech">
+              <span>Laravel</span><span>Node.js</span><span>REST API</span><span>Meta API</span><span>WhatsApp</span>
+            </div>
+          </div>
+
+          <div class="proj-item">
+            <div class="proj-title">LSM — Laporan Stok Malam (Bakmie GM)</div>
+            <div class="proj-desc">Sistem laporan stok malam untuk mencatat dan merekap stok bahan baku setiap akhir hari operasional.</div>
+            <div class="proj-tech">
+              <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+            </div>
+          </div>
+
+          <div class="proj-item">
+            <div class="proj-title">E-Commerce Application</div>
+            <div class="proj-desc">Aplikasi e-commerce dengan manajemen produk, keranjang belanja, dan sistem pembayaran.</div>
+            <div class="proj-tech">
+              <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+            </div>
+          </div>
+
+          <div class="proj-item">
+            <div class="proj-title">Courier Management System</div>
+            <div class="proj-desc">Sistem manajemen pengiriman kurir dengan tracking paket dan manajemen rute pengiriman.</div>
+            <div class="proj-tech">
+              <span>Laravel</span><span>Node.js</span><span>PostgreSQL</span><span>REST API</span>
+            </div>
+          </div>
+
+          <div class="proj-item">
+            <div class="proj-title">Petty Cash System</div>
+            <div class="proj-desc">Sistem pengelolaan kas kecil perusahaan dengan laporan keuangan dan audit trail.</div>
+            <div class="proj-tech">
+              <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Sertifikat -->
+      <div class="section">
+        <div class="section-title">Sertifikat</div>
+        <div class="cert-list">
+          <div class="cert-item">
+            <div><div class="cert-name">Sertifikasi Kompetensi (UKOM)</div><div class="cert-issuer">Lembaga Sertifikasi Profesi</div></div>
+            <div class="cert-year">2024</div>
+          </div>
+          <div class="cert-item">
+            <div><div class="cert-name">Database Management System</div><div class="cert-issuer">Dicoding</div></div>
+            <div class="cert-year">2024</div>
+          </div>
+          <div class="cert-item">
+            <div><div class="cert-name">HR & Database Management System</div><div class="cert-issuer">Dicoding</div></div>
+            <div class="cert-year">2024</div>
+          </div>
+          <div class="cert-item">
+            <div><div class="cert-name">PHP Pemula</div><div class="cert-issuer">Dicoding</div></div>
+            <div class="cert-year">2023</div>
+          </div>
+          <div class="cert-item">
+            <div><div class="cert-name">PostgreSQL</div><div class="cert-issuer">Platform Sertifikasi</div></div>
+            <div class="cert-year">2023</div>
+          </div>
+          <div class="cert-item">
+            <div><div class="cert-name">SQL Basic</div><div class="cert-issuer">HackerRank</div></div>
+            <div class="cert-year">2023</div>
+          </div>
+          <div class="cert-item">
+            <div><div class="cert-name">SQL for Data Science</div><div class="cert-issuer">Platform Sertifikasi</div></div>
+            <div class="cert-year">2023</div>
+          </div>
+          <div class="cert-item">
+            <div><div class="cert-name">Web Development</div><div class="cert-issuer">Platform Sertifikasi</div></div>
+            <div class="cert-year">2023</div>
+          </div>
+          <div class="cert-item">
+            <div><div class="cert-name">Sertifikat Magang</div><div class="cert-issuer">PT. Sentra Inovasi Solusindo</div></div>
+            <div class="cert-year">2022</div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>

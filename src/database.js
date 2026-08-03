@@ -56,8 +56,7 @@ export const portfolioData = {
       { name: "Postman", icon: "\uD83D\uDCEE", color: "#FF6C37", level: 80 },
       { name: "Git", icon: "\uD83D\uDCDD", color: "#F05032", level: 75 },
       { name: "GitHub", icon: "\uD83D\uDC19", color: "#181717", level: 75 },
-      { name: "Docker", icon: "\uD83D\uDC33", color: "#2496ED", level: 70 },
-      { name: "Manual Deployment", icon: "\uD83D\uDE80", color: "#2E7D32", level: 80 }
+      { name: "Docker", icon: "\uD83D\uDC33", color: "#2496ED", level: 70 }
     ]
   },
 

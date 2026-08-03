@@ -155,31 +155,31 @@ export const portfolioData = {
   education: [
     {
       id: 1,
-      institution: "Universitas",
+      institution: "Institut Teknologi dan Bisnis Swadharma",
       degree: "S1 Teknik Informatika",
       period: "Sep 2021 - Sep 2025",
-      description: "Program studi Teknik Informatika dengan fokus pada pengembangan perangkat lunak dan sistem informasi. IPK: 3.79/4.00."
+      description: "Berlokasi di Jakarta Pusat. IPK: 3.79/4.00."
     },
     {
       id: 2,
       institution: "SMK Negeri 1 Pandeglang",
       degree: "Sekolah Menengah Kejuruan",
       period: "2016 - 2019",
-      description: "SMK Negeri 1 Pandeglang, Banten."
+      description: "Berlokasi di Pandeglang, Banten."
     },
     {
       id: 3,
       institution: "SMP Negeri 2 Cimanuk",
       degree: "Sekolah Menengah Pertama",
       period: "2013 - 2016",
-      description: "SMP Negeri 2 Cimanuk, Pandeglang, Banten."
+      description: "Berlokasi di Pandeglang, Banten."
     },
     {
       id: 4,
       institution: "SDN 2 Kadubungbang",
       degree: "Sekolah Dasar",
       period: "2007 - 2013",
-      description: "SD Negeri 2 Kadubungbang, Pandeglang, Banten."
+      description: "Berlokasi di Pandeglang, Banten."
     }
   ],
 

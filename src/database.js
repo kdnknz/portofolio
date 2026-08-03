@@ -49,10 +49,15 @@ export const portfolioData = {
     ],
     tools: [
       { name: "VS Code", icon: "\uD83D\uDCBB", color: "#007ACC", level: 95 },
+      { name: "Kiro (AWS)", icon: "\uD83E\uDD16", color: "#FF9900", level: 80 },
+      { name: "Claude AI", icon: "\uD83E\uDDE0", color: "#6B4FBB", level: 85 },
+      { name: "AWS", icon: "\u2601\uFE0F", color: "#FF9900", level: 70 },
+      { name: "Linux Server", icon: "\uD83D\uDDA5\uFE0F", color: "#FCC624", level: 80 },
       { name: "Postman", icon: "\uD83D\uDCEE", color: "#FF6C37", level: 80 },
       { name: "Git", icon: "\uD83D\uDCDD", color: "#F05032", level: 75 },
       { name: "GitHub", icon: "\uD83D\uDC19", color: "#181717", level: 75 },
-      { name: "Docker", icon: "\uD83D\uDC33", color: "#2496ED", level: 70 }
+      { name: "Docker", icon: "\uD83D\uDC33", color: "#2496ED", level: 70 },
+      { name: "Manual Deployment", icon: "\uD83D\uDE80", color: "#2E7D32", level: 80 }
     ]
   },
 

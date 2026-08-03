@@ -18,7 +18,9 @@ const Contact = ({ data, social }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    alert('Terima kasih! Pesan Anda telah dikirim.')
+    const { name, email, subject, message } = formData
+    const body = `Nama: ${name}%0AEmail: ${email}%0A%0A${message}`
+    window.open(`mailto:${data.email}?subject=${encodeURIComponent(subject)}&body=${body}`, '_self')
     setFormData({ name: '', email: '', subject: '', message: '' })
   }
 

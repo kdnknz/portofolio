@@ -12,7 +12,7 @@ export const portfolioData = {
     birthPlace: "Pandeglang",
     nationality: "WNI",
     bio: "Full Stack Developer dengan pengalaman lebih dari 6 tahun dalam pengembangan perangkat lunak. Terbiasa terlibat dalam proses pengembangan mulai dari analisis kebutuhan hingga pemeliharaan sistem, dengan fokus pada kualitas, keandalan, dan penyelesaian masalah secara efektif.",
-    avatar: "/image/adet.png",
+    avatar: "/image/adit.jpeg",
     resume: "/cv_aditya.html"
   },
 

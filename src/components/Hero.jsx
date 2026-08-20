@@ -16,7 +16,7 @@ const Hero = ({ data, social }) => {
               <Link to="/contact" className="btn btn-primary">
                 Hubungi Saya
               </Link>
-              <a href={data.resume} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
+              <a href={data.resume} className="btn btn-outline" download="CV Aditya Full Stack Developer.pdf">
                 Download CV
               </a>
             </div>

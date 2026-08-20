@@ -4,7 +4,7 @@ export const portfolioData = {
     name: "Aditya",
     title: "Full Stack Developer (Backend-Oriented)",
     subtitle: "Frontend & Backend Developer",
-    email: "aditgumay68@gmail.com",
+    email: "adityainfojob@gmail.com",
     phone: "+62 895-7012-39090",
     location: "Jakarta Selatan, Indonesia",
     address: "JL. Mampang Prapatan VIII, RT.004/001, Kel. Tegal Parang, 12790 Jakarta Selatan",

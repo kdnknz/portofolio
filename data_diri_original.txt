@@ -1,0 +1,25 @@
+Alamat	 		: JL. Mampang Prapatan VIII, RT.004/001,
+				  Kel.Tegal Parang
+				  12790 Jakarta Selatan
+Nomor telepon 	: 0895701239090
+Email 			: adityainfojob@gmail.com
+Tanggal lahir   : 19-04-2001
+Tempat lahir	: Pandeglang
+Jenis kelamin	: Laki-laki
+Kebangsaan		: WNI 
+Pendidikan		: S1 Teknik Informatika (Sep 2021 - Sep 2025) Ipk 3.79
+Pengalaman Kerja: 6 tahun bekerja di PT. Sentra Inovasi Solusindo sebagai fullstack developer.
+LinkedIn		: http://linkedin.com/in/aditya-392174237
+GitHub			: https://github.com/kdnknz
+Portofolio		: https://adityeuh.vercel.app
+deskriptif 		: Full Stack Developer dengan pengalaman lebih dari 6 tahun dalam pengembangan perangkat lunak. Terbiasa terlibat dalam proses pengembangan mulai dari analisis kebutuhan hingga pemeliharaan sistem, dengan fokus pada kualitas, keandalan, dan penyelesaian masalah secara efektif.
+Skills          : REST API, WEB developer
+Core Technologies :
+				• Backend : Laravel, Node.js
+				• Frontend : Boostrap, HTML, React.js
+				• Languages : PHP, JavaScript, TypeScript
+				• Database : PostgreSQL, MySQL 
+Other Experience :
+				• Go
+				• Java
+				• Pyhthon

@@ -38,7 +38,7 @@ export const portfolioData = {
       { name: "Node.js", icon: "\uD83D\uDFE2", color: "#339933", level: 80 },
       { name: "REST API", icon: "\uD83D\uDD17", color: "#FF6B35", level: 90 },
       { name: "Go", icon: "\uD83D\uDC39", color: "#00ADD8", level: 65 },
-      { name: "Java", icon: "\u2615", color: "#ED8B00", level: 60 },
+      { name: "Java", icon: "\u2615", color: "#ED8B00", level: 50 },
       { name: "Python", icon: "\uD83D\uDC0D", color: "#3776AB", level: 60 }
     ],
     framework: [
@@ -84,7 +84,7 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
-      title: "HRMS — Absensi",
+      title: "HRIS — Absensi",
       description: "Human Resource Management System dengan fitur absensi karyawan, rekap kehadiran, dan manajemen data pegawai",
       technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
       liveUrl: "",
@@ -155,7 +155,7 @@ export const portfolioData = {
       position: "Programmer",
       location: "Jakarta Utara",
       period: "Mei 2022 - Sekarang",
-      description: "Mengembangkan berbagai proyek penting seperti HRMS, CMS, E-Commerce, E-Ticketing, dan Pengelolaan Petty Cash serta proyek lainnya."
+      description: "Mengembangkan berbagai proyek penting seperti HRIS, CMS, E-Commerce, E-Ticketing, dan Pengelolaan Petty Cash serta proyek lainnya."
     },
     {
       id: 2,

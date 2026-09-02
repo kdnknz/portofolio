@@ -1,29 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import SectionTitle from './SectionTitle.jsx'
 
 const Contact = ({ data, social }) => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  })
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    })
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const { name, email, subject, message } = formData
-    const body = `Nama: ${name}%0AEmail: ${email}%0A%0A${message}`
-    window.open(`mailto:${data.email}?subject=${encodeURIComponent(subject)}&body=${body}`, '_self')
-    setFormData({ name: '', email: '', subject: '', message: '' })
-  }
-
   return (
     <section className="page-section">
       <div className="container">
@@ -65,51 +43,6 @@ const Contact = ({ data, social }) => {
             </div>
           </div>
 
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="form-group">
-              <input
-                type="text"
-                name="name"
-                placeholder="Nama Anda"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Anda"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                value={formData.subject}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <textarea
-                name="message"
-                placeholder="Pesan Anda"
-                rows="5"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              ></textarea>
-            </div>
-            <button type="submit" className="btn btn-primary">
-              Kirim Pesan
-            </button>
-          </form>
         </div>
       </div>
 
@@ -129,10 +62,8 @@ const Contact = ({ data, social }) => {
         }
 
         .contact-content {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 3rem;
-          align-items: start;
+          max-width: 640px;
+          margin: 0 auto;
         }
 
         .contact-info h3 {
@@ -198,56 +129,7 @@ const Contact = ({ data, social }) => {
           color: var(--primary-color);
         }
 
-        .contact-form {
-          background: var(--bg-card);
-          border: 1px solid var(--border-color);
-          padding: 2rem;
-          border-radius: 12px;
-        }
-
-        .form-group {
-          margin-bottom: 1rem;
-        }
-
-        .form-group input,
-        .form-group textarea {
-          width: 100%;
-          padding: 0.85rem 1rem;
-          border: 1px solid var(--border-color);
-          border-radius: 6px;
-          font-size: 0.9rem;
-          background: var(--bg-primary);
-          color: var(--text-primary);
-          transition: border-color 0.2s ease;
-          font-family: inherit;
-        }
-
-        .form-group input::placeholder,
-        .form-group textarea::placeholder {
-          color: var(--text-light);
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-          outline: none;
-          border-color: var(--primary-color);
-        }
-
-        .form-group textarea {
-          resize: vertical;
-          min-height: 120px;
-        }
-
         @media (max-width: 768px) {
-          .contact-content {
-            grid-template-columns: 1fr;
-            gap: 2rem;
-          }
-
-          .contact-form {
-            padding: 1.5rem;
-          }
-
           .social-links {
             flex-wrap: wrap;
           }

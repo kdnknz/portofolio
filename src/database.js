@@ -44,16 +44,25 @@ export const portfolioData = {
     framework: [
       { name: "React.js", icon: "\u269B\uFE0F", color: "#61DAFB", level: 75 },
       { name: "Next.js", icon: "\u25B2", color: "#000000", level: 70 },
+      { name: "Vue.js", icon: "\uD83D\uDFE9", color: "#4FC08D", level: 70 },
       { name: "Bootstrap", icon: "\uD83C\uDD71\uFE0F", color: "#7952B3", level: 90 },
+      { name: "Tailwind CSS", icon: "\uD83C\uDF2C\uFE0F", color: "#06B6D4", level: 80 },
+      { name: "jQuery", icon: "\uD83D\uDCD8", color: "#0769AD", level: 80 },
+      { name: "Vite", icon: "\u26A1", color: "#646CFF", level: 75 },
       { name: "Laravel", icon: "\uD83D\uDD25", color: "#FF2D20", level: 90 },
+      { name: "Livewire", icon: "\uD83D\uDD04", color: "#FB70A9", level: 75 },
+      { name: "Inertia.js", icon: "\uD83E\uDDED", color: "#9553E9", level: 75 },
       { name: "CodeIgniter", icon: "\uD83D\uDD25", color: "#EF4223", level: 80 },
       { name: "CakePHP", icon: "\uD83C\uDF70", color: "#D33C43", level: 70 },
       { name: "OpenCart", icon: "\uD83D\uDED2", color: "#2AA9E0", level: 70 },
+      { name: "Express.js", icon: "\uD83D\uDE82", color: "#000000", level: 80 },
       { name: "Gin", icon: "\uD83C\uDF78", color: "#00ADD8", level: 65 }
     ],
     database: [
       { name: "PostgreSQL", icon: "\uD83D\uDC18", color: "#336791", level: 90 },
-      { name: "MySQL", icon: "\uD83D\uDC2C", color: "#4479A1", level: 90 }
+      { name: "MySQL", icon: "\uD83D\uDC2C", color: "#4479A1", level: 90 },
+      { name: "MariaDB", icon: "\uD83E\uDD9C", color: "#003545", level: 80 },
+      { name: "SQLite", icon: "\uD83E\uDEB6", color: "#003B57", level: 75 }
     ],
     tools: [
       { name: "VS Code", icon: "\uD83D\uDCBB", color: "#007ACC", level: 95 },
@@ -64,7 +73,10 @@ export const portfolioData = {
       { name: "Postman", icon: "\uD83D\uDCEE", color: "#FF6C37", level: 80 },
       { name: "Git", icon: "\uD83D\uDCDD", color: "#F05032", level: 75 },
       { name: "GitHub", icon: "\uD83D\uDC19", color: "#181717", level: 75 },
-      { name: "Docker", icon: "\uD83D\uDC33", color: "#2496ED", level: 70 }
+      { name: "GitLab", icon: "\uD83E\uDD8A", color: "#FC6D26", level: 75 },
+      { name: "Docker", icon: "\uD83D\uDC33", color: "#2496ED", level: 70 },
+      { name: "Nginx", icon: "\uD83D\uDFE9", color: "#009639", level: 75 },
+      { name: "Apache", icon: "\uD83E\uDEB6", color: "#D22128", level: 75 }
     ]
   },
 

@@ -36,12 +36,18 @@ export const portfolioData = {
     ],
     backend: [
       { name: "PHP", icon: "\uD83D\uDC18", color: "#777BB4", level: 90 },
-      { name: "Laravel", icon: "\uD83D\uDD25", color: "#FF2D20", level: 90 },
       { name: "Node.js", icon: "\uD83D\uDFE2", color: "#339933", level: 80 },
       { name: "REST API", icon: "\uD83D\uDD17", color: "#FF6B35", level: 90 },
       { name: "Go", icon: "\uD83D\uDC39", color: "#00ADD8", level: 65 },
       { name: "Java", icon: "\u2615", color: "#ED8B00", level: 60 },
       { name: "Python", icon: "\uD83D\uDC0D", color: "#3776AB", level: 60 }
+    ],
+    framework: [
+      { name: "Laravel", icon: "\uD83D\uDD25", color: "#FF2D20", level: 90 },
+      { name: "CodeIgniter", icon: "\uD83D\uDD25", color: "#EF4223", level: 80 },
+      { name: "CakePHP", icon: "\uD83C\uDF70", color: "#D33C43", level: 70 },
+      { name: "OpenCart", icon: "\uD83D\uDED2", color: "#2AA9E0", level: 70 },
+      { name: "Gin", icon: "\uD83C\uDF78", color: "#00ADD8", level: 65 }
     ],
     database: [
       { name: "PostgreSQL", icon: "\uD83D\uDC18", color: "#336791", level: 90 },

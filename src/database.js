@@ -76,7 +76,8 @@ export const portfolioData = {
       { name: "GitLab", icon: "\uD83E\uDD8A", color: "#FC6D26", level: 75 },
       { name: "Docker", icon: "\uD83D\uDC33", color: "#2496ED", level: 70 },
       { name: "Nginx", icon: "\uD83D\uDFE9", color: "#009639", level: 75 },
-      { name: "Apache", icon: "\uD83E\uDEB6", color: "#D22128", level: 75 }
+      { name: "Apache", icon: "\uD83E\uDEB6", color: "#D22128", level: 75 },
+      { name: "Kafka", icon: "\uD83D\uDCE8", color: "#231F20", level: 70 }
     ]
   },
 
@@ -131,7 +132,7 @@ export const portfolioData = {
       id: 6,
       title: "Petty Cash System",
       description: "Sistem pengelolaan kas kecil perusahaan dengan laporan keuangan dan audit trail",
-      technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+      technologies: ["Cake PHP", "PHP", "PostgreSQL", "Bootstrap"],
       liveUrl: "",
       githubUrl: "",
       featured: false

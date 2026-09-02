@@ -58,12 +58,6 @@ export const portfolioData = {
       { name: "Express.js", icon: "\uD83D\uDE82", color: "#000000", level: 80 },
       { name: "Gin", icon: "\uD83C\uDF78", color: "#00ADD8", level: 65 }
     ],
-    database: [
-      { name: "PostgreSQL", icon: "\uD83D\uDC18", color: "#336791", level: 90 },
-      { name: "MySQL", icon: "\uD83D\uDC2C", color: "#4479A1", level: 90 },
-      { name: "MariaDB", icon: "\uD83E\uDD9C", color: "#003545", level: 80 },
-      { name: "SQLite", icon: "\uD83E\uDEB6", color: "#003B57", level: 75 }
-    ],
     tools: [
       { name: "VS Code", icon: "\uD83D\uDCBB", color: "#007ACC", level: 95 },
       { name: "Kiro (AWS)", icon: "\uD83E\uDD16", color: "#FF9900", level: 80 },
@@ -78,6 +72,12 @@ export const portfolioData = {
       { name: "Nginx", icon: "\uD83D\uDFE9", color: "#009639", level: 75 },
       { name: "Apache", icon: "\uD83E\uDEB6", color: "#D22128", level: 75 },
       { name: "Kafka", icon: "\uD83D\uDCE8", color: "#231F20", level: 70 }
+    ],
+    database: [
+      { name: "PostgreSQL", icon: "\uD83D\uDC18", color: "#336791", level: 90 },
+      { name: "MySQL", icon: "\uD83D\uDC2C", color: "#4479A1", level: 90 },
+      { name: "MariaDB", icon: "\uD83E\uDD9C", color: "#003545", level: 80 },
+      { name: "SQLite", icon: "\uD83E\uDEB6", color: "#003B57", level: 75 }
     ]
   },
 

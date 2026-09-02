@@ -71,27 +71,7 @@ const Skills = ({ data }) => {
             </div>
           </div>
 
-          <div className="skill-category">
-            <h3>Database</h3>
-            <div className="skills-list">
-              {data.database.map((skill, index) => (
-                <div key={index} className="skill-item">
-                  <div className="skill-header">
-                    <span className="skill-name">{skill.name}</span>
-                    <span className="skill-percentage">{skill.level}%</span>
-                  </div>
-                  <div className="skill-progress">
-                    <div 
-                      className="skill-progress-bar"
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="skill-category">
+           <div className="skill-category">
             <h3>Tools</h3>
             <div className="skills-list">
               {data.tools.map((skill, index) => (
@@ -110,6 +90,26 @@ const Skills = ({ data }) => {
               ))}
             </div>
           </div>
+
+          <div className="skill-category">
+            <h3>Database</h3>
+            <div className="skills-list">
+              {data.database.map((skill, index) => (
+                <div key={index} className="skill-item">
+                  <div className="skill-header">
+                    <span className="skill-name">{skill.name}</span>
+                    <span className="skill-percentage">{skill.level}%</span>
+                  </div>
+                  <div className="skill-progress">
+                    <div 
+                      className="skill-progress-bar"
+                      style={{ width: `${skill.level}%` }}
+                    ></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>        
         </div>
       </div>
 

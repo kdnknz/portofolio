@@ -29,10 +29,9 @@ export const portfolioData = {
   skills: {
     frontend: [
       { name: "HTML5", icon: "\uD83C\uDF10", color: "#E34F26", level: 90 },
+      { name: "CSS3", icon: "\uD83C\uDFA8", color: "#1572B6", level: 85 },
       { name: "JavaScript", icon: "\u26A1", color: "#F7DF1E", level: 85 },
-      { name: "TypeScript", icon: "\uD83D\uDD37", color: "#3178C6", level: 75 },
-      { name: "React.js", icon: "\u269B\uFE0F", color: "#61DAFB", level: 75 },
-      { name: "Bootstrap", icon: "\uD83C\uDD71\uFE0F", color: "#7952B3", level: 90 }
+      { name: "TypeScript", icon: "\uD83D\uDD37", color: "#3178C6", level: 75 }
     ],
     backend: [
       { name: "PHP", icon: "\uD83D\uDC18", color: "#777BB4", level: 90 },
@@ -43,6 +42,9 @@ export const portfolioData = {
       { name: "Python", icon: "\uD83D\uDC0D", color: "#3776AB", level: 60 }
     ],
     framework: [
+      { name: "React.js", icon: "\u269B\uFE0F", color: "#61DAFB", level: 75 },
+      { name: "Next.js", icon: "\u25B2", color: "#000000", level: 70 },
+      { name: "Bootstrap", icon: "\uD83C\uDD71\uFE0F", color: "#7952B3", level: 90 },
       { name: "Laravel", icon: "\uD83D\uDD25", color: "#FF2D20", level: 90 },
       { name: "CodeIgniter", icon: "\uD83D\uDD25", color: "#EF4223", level: 80 },
       { name: "CakePHP", icon: "\uD83C\uDF70", color: "#D33C43", level: 70 },

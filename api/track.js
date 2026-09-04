@@ -1,4 +1,4 @@
-import { list, put } from '@vercel/blob'
+import { get, put } from '@vercel/blob'
 import { createHash } from 'crypto'
 
 const BLOB_NAME = 'viewers.ndjson'
@@ -28,17 +28,20 @@ export default async function handler(req, res) {
     const hash = hashIp(getClientIp(req))
     const line = JSON.stringify({ ip: hash, ts: new Date().toISOString() }) + '\n'
 
-    // read-modify-write: baca isi file saat ini (kosong bila belum ada)
-    const { blobs } = await list({ prefix: BLOB_NAME, token })
+    // read-modify-write pada private store: baca isi file saat ini via get()
+    // dengan useCache:false agar mencerminkan tulisan terbaru (kosong bila belum ada)
     let existing = ''
-    const found = blobs.find((b) => b.pathname === BLOB_NAME)
-    if (found) {
-      const resp = await fetch(found.url)
-      if (resp.ok) existing = await resp.text()
+    try {
+      const blob = await get(BLOB_NAME, { access: 'private', token, useCache: false })
+      if (blob && blob.stream) {
+        existing = await new Response(blob.stream).text()
+      }
+    } catch {
+      // file belum ada / gagal dibaca → perlakukan sebagai kosong
     }
 
     await put(BLOB_NAME, existing + line, {
-      access: 'public',
+      access: 'private',
       contentType: 'application/x-ndjson',
       allowOverwrite: true,
       token,

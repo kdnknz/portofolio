@@ -5,6 +5,12 @@ const BLOB_NAME = 'viewers.ndjson'
 export default async function handler(req, res) {
   try {
     const token = process.env.BLOB_READ_WRITE_TOKEN
+    if (!token) {
+      console.error('[count] BLOB_READ_WRITE_TOKEN tidak terkonfigurasi')
+      return res
+        .status(500)
+        .json({ error: 'Gagal membaca jumlah pengunjung', code: 'MISSING_BLOB_TOKEN' })
+    }
 
     // Cari File_NDJSON pada Penyimpanan_Blob
     const { blobs } = await list({ prefix: BLOB_NAME, token })
@@ -33,6 +39,7 @@ export default async function handler(req, res) {
 
     return res.status(200).json({ totalViewers: unique.size })
   } catch (err) {
+    console.error('[count] gagal:', err)
     return res.status(500).json({ error: 'Gagal membaca jumlah pengunjung' })
   }
 }

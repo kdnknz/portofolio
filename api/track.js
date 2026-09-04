@@ -20,6 +20,12 @@ export default async function handler(req, res) {
   try {
     const salt = process.env.VIEWER_HASH_SALT || ''
     const token = process.env.BLOB_READ_WRITE_TOKEN
+    if (!token) {
+      console.error('[track] BLOB_READ_WRITE_TOKEN tidak terkonfigurasi')
+      return res
+        .status(500)
+        .json({ error: 'Gagal mencatat kunjungan', code: 'MISSING_BLOB_TOKEN' })
+    }
     const hash = hashIp(getClientIp(req), salt)
     const line = JSON.stringify({ ip: hash, ts: new Date().toISOString() }) + '\n'
 
@@ -41,6 +47,7 @@ export default async function handler(req, res) {
 
     return res.status(200).json({ ok: true })
   } catch (err) {
+    console.error('[track] gagal:', err)
     return res.status(500).json({ error: 'Gagal mencatat kunjungan' })
   }
 }

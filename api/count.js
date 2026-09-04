@@ -4,19 +4,13 @@ const BLOB_NAME = 'viewers.ndjson'
 
 export default async function handler(req, res) {
   try {
-    const token = process.env.BLOB_READ_WRITE_TOKEN
-    if (!token) {
-      console.error('[count] BLOB_READ_WRITE_TOKEN tidak terkonfigurasi')
-      return res
-        .status(500)
-        .json({ error: 'Gagal membaca jumlah pengunjung', code: 'MISSING_BLOB_TOKEN' })
-    }
-
+    // Autentikasi otomatis: SDK memakai OIDC (BLOB_STORE_ID + VERCEL_OIDC_TOKEN)
+    // saat berjalan di Vercel, atau fallback ke BLOB_READ_WRITE_TOKEN bila ada.
     // Baca File_NDJSON dari private store via get() (useCache:false untuk data terbaru).
     // Bila file belum ada, perlakukan sebagai kosong → totalViewers 0.
     let text = ''
     try {
-      const blob = await get(BLOB_NAME, { access: 'private', token, useCache: false })
+      const blob = await get(BLOB_NAME, { access: 'private', useCache: false })
       if (blob && blob.stream) {
         text = await new Response(blob.stream).text()
       }

@@ -18,13 +18,8 @@ export default async function handler(req, res) {
   }
 
   try {
-    const token = process.env.BLOB_READ_WRITE_TOKEN
-    if (!token) {
-      console.error('[track] BLOB_READ_WRITE_TOKEN tidak terkonfigurasi')
-      return res
-        .status(500)
-        .json({ error: 'Gagal mencatat kunjungan', code: 'MISSING_BLOB_TOKEN' })
-    }
+    // Autentikasi otomatis: SDK memakai OIDC (BLOB_STORE_ID + VERCEL_OIDC_TOKEN)
+    // saat berjalan di Vercel, atau fallback ke BLOB_READ_WRITE_TOKEN bila ada.
     const hash = hashIp(getClientIp(req))
     const line = JSON.stringify({ ip: hash, ts: new Date().toISOString() }) + '\n'
 
@@ -32,7 +27,7 @@ export default async function handler(req, res) {
     // dengan useCache:false agar mencerminkan tulisan terbaru (kosong bila belum ada)
     let existing = ''
     try {
-      const blob = await get(BLOB_NAME, { access: 'private', token, useCache: false })
+      const blob = await get(BLOB_NAME, { access: 'private', useCache: false })
       if (blob && blob.stream) {
         existing = await new Response(blob.stream).text()
       }
@@ -44,7 +39,6 @@ export default async function handler(req, res) {
       access: 'private',
       contentType: 'application/x-ndjson',
       allowOverwrite: true,
-      token,
     })
 
     return res.status(200).json({ ok: true })

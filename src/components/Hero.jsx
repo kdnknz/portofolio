@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ViewerCounter from './ViewerCounter'
 
 const Hero = ({ data, social }) => {
   return (
@@ -44,6 +45,8 @@ const Hero = ({ data, social }) => {
                 </a>
               )}
             </div>
+
+            <ViewerCounter />
           </div>
 
           <div className="hero-image">

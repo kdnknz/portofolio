@@ -8,8 +8,8 @@ function getClientIp(req) {
   return xff.split(',')[0].trim() || 'unknown'
 }
 
-function hashIp(ip, salt) {
-  return createHash('sha256').update(`${ip}${salt}`).digest('hex')
+function hashIp(ip) {
+  return createHash('sha256').update(ip).digest('hex')
 }
 
 export default async function handler(req, res) {
@@ -18,7 +18,6 @@ export default async function handler(req, res) {
   }
 
   try {
-    const salt = process.env.VIEWER_HASH_SALT || ''
     const token = process.env.BLOB_READ_WRITE_TOKEN
     if (!token) {
       console.error('[track] BLOB_READ_WRITE_TOKEN tidak terkonfigurasi')
@@ -26,7 +25,7 @@ export default async function handler(req, res) {
         .status(500)
         .json({ error: 'Gagal mencatat kunjungan', code: 'MISSING_BLOB_TOKEN' })
     }
-    const hash = hashIp(getClientIp(req), salt)
+    const hash = hashIp(getClientIp(req))
     const line = JSON.stringify({ ip: hash, ts: new Date().toISOString() }) + '\n'
 
     // read-modify-write: baca isi file saat ini (kosong bila belum ada)

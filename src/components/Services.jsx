@@ -1,23 +1,26 @@
 import React from 'react'
 import SectionTitle from './SectionTitle.jsx'
 import BackButton from './BackButton.jsx'
+import { useLanguage } from '../hooks/useLanguage.js'
 
 const Services = ({ data }) => {
+  const { t } = useLanguage()
+
   return (
     <section className="page-section">
       <BackButton />
       <div className="container">
         <SectionTitle 
-          title="Layanan" 
-          subtitle="Layanan yang saya tawarkan" 
+          title={t('section.services')} 
+          subtitle={t('section.services.subtitle')} 
         />
 
         <div className="services-grid">
           {data.map((service) => (
             <div key={service.id} className="service-card">
               <div className="service-icon">{service.icon}</div>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
+              <h3>{t(service.title)}</h3>
+              <p>{t(service.description)}</p>
             </div>
           ))}
         </div>

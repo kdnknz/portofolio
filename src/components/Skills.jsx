@@ -1,13 +1,16 @@
 import React from 'react'
 import SectionTitle from './SectionTitle.jsx'
+import { useLanguage } from '../hooks/useLanguage.js'
 
 const Skills = ({ data }) => {
+  const { t } = useLanguage()
+
   return (
     <section className="page-section">
       <div className="container">
         <SectionTitle 
-          title="Skills & Keahlian" 
-          subtitle="Teknologi dan tools yang saya kuasai" 
+          title={t('section.skills')} 
+          subtitle={t('section.skills.subtitle')} 
         />
 
         <div className="skills-grid">

@@ -1,14 +1,17 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { useLanguage } from '../hooks/useLanguage.js'
+import LanguageSelector from './LanguageSelector.jsx'
 
 const MobileBottomNav = () => {
   const location = useLocation()
+  const { t } = useLanguage()
 
   const navItems = [
-    { path: '/', label: 'Home', icon: '⌂' },
-    { path: '/skills', label: 'Skills', icon: '◆' },
-    { path: '/experience', label: 'Work', icon: '◈' },
-    { path: '/others', label: 'More', icon: '⋯' }
+    { path: '/', label: t('nav.home'), icon: '⌂' },
+    { path: '/skills', label: t('nav.skills'), icon: '◆' },
+    { path: '/experience', label: t('nav.work'), icon: '◈' },
+    { path: '/others', label: t('nav.more'), icon: '⋯' }
   ]
 
   const isActive = (path) => {
@@ -30,6 +33,10 @@ const MobileBottomNav = () => {
           <span className="nav-label">{item.label}</span>
         </Link>
       ))}
+
+      <div className="mobile-nav-lang">
+        <LanguageSelector />
+      </div>
 
       <style jsx>{`
         .mobile-bottom-nav {
@@ -72,9 +79,19 @@ const MobileBottomNav = () => {
           font-weight: 500;
         }
 
+        .mobile-nav-lang {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 0 0 auto;
+          padding: 0 0.5rem;
+          border-left: 1px solid var(--border-color);
+        }
+
         @media (max-width: 768px) {
           .mobile-bottom-nav {
             display: flex;
+            align-items: center;
           }
         }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import SectionTitle from './SectionTitle.jsx'
 import BackButton from './BackButton.jsx'
+import { useLanguage } from '../hooks/useLanguage.js'
 
 const getProjectStyle = (technologies = []) => {
   const t = technologies.join(' ').toLowerCase()
@@ -16,13 +17,15 @@ const getProjectStyle = (technologies = []) => {
 }
 
 const Projects = ({ data }) => {
+  const { t } = useLanguage()
+
   return (
     <section className="page-section">
       <BackButton />
       <div className="container">
         <SectionTitle 
-          title="Projects" 
-          subtitle="Beberapa project yang telah saya kerjakan" 
+          title={t('section.projects')} 
+          subtitle={t('section.projects.subtitle')} 
         />
 
         <div className="projects-grid">
@@ -40,7 +43,7 @@ const Projects = ({ data }) => {
                 
                 <div className="project-content">
                   <h3>{project.title}</h3>
-                  <p>{project.description}</p>
+                  <p>{t(project.description)}</p>
                   
                   <div className="project-tech">
                     {project.technologies.map((tech, index) => (

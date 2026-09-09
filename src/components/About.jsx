@@ -1,20 +1,23 @@
 import React from 'react'
 import SectionTitle from './SectionTitle.jsx'
 import BackButton from './BackButton.jsx'
+import { useLanguage } from '../hooks/useLanguage.js'
 
 const About = ({ data }) => {
+  const { t } = useLanguage()
+
   return (
     <section className="page-section">
       <BackButton />
       <div className="container">
         <SectionTitle 
-          title="Tentang Saya" 
-          subtitle="Background dan pengalaman saya" 
+          title={t('section.about')} 
+          subtitle={t('section.about.subtitle')} 
         />
 
         <div className="about-content">
           <div className="about-text">
-            <p className="about-bio">{data.bio}</p>
+            <p className="about-bio">{t(data.bio)}</p>
             
             <div className="about-stats">
               <div className="stat">

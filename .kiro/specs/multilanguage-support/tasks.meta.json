@@ -1,0 +1,285 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Create `src/context/LanguageContext.jsx`": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942104977
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942116217
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942255140
+      }
+    ],
+    "1.2 Create `src/hooks/useLanguage.js`": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942105043
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942267803
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942309023
+      }
+    ],
+    "2.1 Create `src/i18n/uiStrings.js`": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942105101
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942117147
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942256292
+      }
+    ],
+    "3.1 Create `src/components/LanguageSelector.jsx`": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942105178
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942329637
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942371096
+      }
+    ],
+    "4.1 Convert body content in `src/database.js` to locale objects": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942105247
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942118061
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942257165
+      }
+    ],
+    "5. Checkpoint - Verify the core builds": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942105299
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942376047
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942414425
+      }
+    ],
+    "6.1 Wrap the app tree and translate the WhatsApp aria-label in `src/App.jsx`": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942105347
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942419115
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942494715
+      }
+    ],
+    "7.1 Update `src/components/Header.jsx`": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942105405
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942500120
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942565421
+      }
+    ],
+    "7.2 Update `src/components/MobileBottomNav.jsx`": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942105468
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942500813
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942565526
+      }
+    ],
+    "8.1 Update section titles and static labels": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942105525
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942581399
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942741604
+      }
+    ],
+    "8.2 Resolve locale-keyed content in About and Hero": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942105578
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942743003
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942801786
+      }
+    ],
+    "8.3 Resolve locale-keyed content in Experience and Services": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942105638
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942743961
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942802679
+      }
+    ],
+    "8.4 Resolve locale-keyed content in Projects, Education, and Certificate": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942105700
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942744992
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942803695
+      }
+    ],
+    "9. Final checkpoint - Verify the full build": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942105769
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942809624
+      },
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942856935
+      }
+    ],
+    "2. Create the UI-strings store": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942256349
+      }
+    ],
+    "4. Restructure the content data store": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942257270
+      }
+    ],
+    "1. Create the language context core and hook": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942309080
+      }
+    ],
+    "3. Create the LanguageSelector component": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942371176
+      }
+    ],
+    "6. Wire the provider into the app": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942494815
+      }
+    ],
+    "8. Translate the section components": [
+      {
+        "executionId": "726830bc-3faa-48ae-b258-7e731a7c8515",
+        "chatSessionId": "sess_0369b9f1-9a99-4e14-ba9e-7cadfff1145c",
+        "timestamp": 1788942803757
+      }
+    ]
+  }
+}

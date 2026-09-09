@@ -1,13 +1,16 @@
 import React from 'react'
 import SectionTitle from './SectionTitle.jsx'
+import { useLanguage } from '../hooks/useLanguage.js'
 
 const Contact = ({ data, social }) => {
+  const { t } = useLanguage()
+
   return (
     <section className="page-section">
       <div className="container">
         <SectionTitle 
-          title="Hubungi Saya" 
-          subtitle="Mari berkolaborasi dan wujudkan project Anda" 
+          title={t('section.contact')} 
+          subtitle={t('section.contact.subtitle')} 
         />
 
         <div className="contact-content">

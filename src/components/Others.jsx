@@ -1,8 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import SectionTitle from './SectionTitle.jsx'
+import { useLanguage } from '../hooks/useLanguage.js'
 
 const Others = () => {
+  const { t } = useLanguage()
+
   const otherPages = [
     { id: 1, title: "Projects", description: "Project-project yang telah saya kerjakan", path: "/projects" },
     { id: 2, title: "Services", description: "Layanan yang saya tawarkan", path: "/services" },
@@ -16,8 +19,8 @@ const Others = () => {
     <section className="page-section">
       <div className="container">
         <SectionTitle 
-          title="Explore More" 
-          subtitle="Jelajahi lebih dalam tentang saya" 
+          title={t('section.others')} 
+          subtitle={t('section.others.subtitle')} 
         />
 
         <div className="others-grid">

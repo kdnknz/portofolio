@@ -2,8 +2,14 @@ export const portfolioData = {
   // Informasi Pribadi
   personal: {
     name: "Aditya",
-    title: "Full Stack Developer (Backend-Oriented)",
-    subtitle: "Frontend & Backend Developer",
+    title: {
+      id: "Full Stack Developer (Backend-Oriented)",
+      en: "Full Stack Developer (Backend-Oriented)"
+    },
+    subtitle: {
+      id: "Frontend & Backend Developer",
+      en: "Frontend & Backend Developer"
+    },
     email: "adityainfojob@gmail.com",
     phone: "+62 895-7012-39090",
     location: "Jakarta Selatan, Indonesia",
@@ -11,7 +17,10 @@ export const portfolioData = {
     birthDate: "19 April 2001",
     birthPlace: "Pandeglang",
     nationality: "WNI",
-    bio: "Full Stack Developer dengan pengalaman lebih dari 6 tahun dalam pengembangan perangkat lunak. Terbiasa terlibat dalam proses pengembangan mulai dari analisis kebutuhan hingga pemeliharaan sistem, dengan fokus pada kualitas, keandalan, dan penyelesaian masalah secara efektif.",
+    bio: {
+      id: "Full Stack Developer dengan pengalaman lebih dari 6 tahun dalam pengembangan perangkat lunak. Terbiasa terlibat dalam proses pengembangan mulai dari analisis kebutuhan hingga pemeliharaan sistem, dengan fokus pada kualitas, keandalan, dan penyelesaian masalah secara efektif.",
+      en: "Full Stack Developer with over 6 years of experience in software development. Accustomed to being involved throughout the development process, from requirements analysis to system maintenance, with a focus on quality, reliability, and effective problem solving."
+    },
     avatar: "/image/adit.jpeg",
     resume: "/CV Aditya Full Stack Developer.pdf"
   },
@@ -86,7 +95,10 @@ export const portfolioData = {
     {
       id: 1,
       title: "HRIS — Absensi",
-      description: "Human Resource Management System dengan fitur absensi karyawan, rekap kehadiran, dan manajemen data pegawai",
+      description: {
+        id: "Human Resource Management System dengan fitur absensi karyawan, rekap kehadiran, dan manajemen data pegawai",
+        en: "Human Resource Management System with employee attendance features, attendance recaps, and employee data management"
+      },
       technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
       liveUrl: "",
       githubUrl: "",
@@ -95,7 +107,10 @@ export const portfolioData = {
     {
       id: 2,
       title: "Messaging Channel System",
-      description: "Sistem pengiriman pesan terintegrasi dengan Meta API untuk mengirim WhatsApp secara otomatis ke pelanggan",
+      description: {
+        id: "Sistem pengiriman pesan terintegrasi dengan Meta API untuk mengirim WhatsApp secara otomatis ke pelanggan",
+        en: "A messaging system integrated with the Meta API to automatically send WhatsApp messages to customers"
+      },
       technologies: ["Laravel", "Node.js", "REST API", "Meta API", "WhatsApp"],
       liveUrl: "",
       githubUrl: "",
@@ -104,7 +119,10 @@ export const portfolioData = {
     {
       id: 3,
       title: "E-Commerce Application",
-      description: "Aplikasi e-commerce lengkap dengan manajemen produk, keranjang belanja, dan sistem pembayaran",
+      description: {
+        id: "Aplikasi e-commerce lengkap dengan manajemen produk, keranjang belanja, dan sistem pembayaran",
+        en: "A complete e-commerce application with product management, shopping cart, and payment system"
+      },
       technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
       liveUrl: "",
       githubUrl: "",
@@ -113,7 +131,10 @@ export const portfolioData = {
     {
       id: 4,
       title: "LSM — Laporan Stok Malam",
-      description: "Sistem laporan stok malam untuk Bakmie GM, mencatat dan merekap stok bahan baku setiap akhir hari operasional",
+      description: {
+        id: "Sistem laporan stok malam untuk Bakmie GM, mencatat dan merekap stok bahan baku setiap akhir hari operasional",
+        en: "A nightly stock reporting system for Bakmie GM that records and recaps raw material stock at the end of each operational day"
+      },
       technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
       liveUrl: "",
       githubUrl: "",
@@ -122,7 +143,10 @@ export const portfolioData = {
     {
       id: 5,
       title: "Courier Management System",
-      description: "Sistem manajemen pengiriman kurir dengan tracking paket dan manajemen rute pengiriman",
+      description: {
+        id: "Sistem manajemen pengiriman kurir dengan tracking paket dan manajemen rute pengiriman",
+        en: "A courier delivery management system with package tracking and delivery route management"
+      },
       technologies: ["Laravel", "Node.js", "PostgreSQL", "REST API"],
       liveUrl: "",
       githubUrl: "",
@@ -131,7 +155,10 @@ export const portfolioData = {
     {
       id: 6,
       title: "Petty Cash System",
-      description: "Sistem pengelolaan kas kecil perusahaan dengan laporan keuangan dan audit trail",
+      description: {
+        id: "Sistem pengelolaan kas kecil perusahaan dengan laporan keuangan dan audit trail",
+        en: "A company petty cash management system with financial reports and an audit trail"
+      },
       technologies: ["Cake PHP", "PHP", "PostgreSQL", "Bootstrap"],
       liveUrl: "",
       githubUrl: "",
@@ -140,7 +167,10 @@ export const portfolioData = {
     {
       id: 7,
       title: "Portfolio Website",
-      description: "Website portfolio personal dengan desain modern, animasi interaktif, dan responsive design",
+      description: {
+        id: "Website portfolio personal dengan desain modern, animasi interaktif, dan responsive design",
+        en: "A personal portfolio website with a modern design, interactive animations, and responsive design"
+      },
       technologies: ["React.js", "Vite", "JavaScript"],
       liveUrl: "https://adityeuh.vercel.app",
       githubUrl: "https://github.com/kdnknz",
@@ -156,7 +186,10 @@ export const portfolioData = {
       position: "Programmer",
       location: "Jakarta Utara",
       period: "Mei 2022 - Sekarang",
-      description: "Mengembangkan berbagai proyek penting seperti HRIS, CMS, E-Commerce, E-Ticketing, dan Pengelolaan Petty Cash serta proyek lainnya."
+      description: {
+        id: "Mengembangkan berbagai proyek penting seperti HRIS, CMS, E-Commerce, E-Ticketing, dan Pengelolaan Petty Cash serta proyek lainnya.",
+        en: "Developed various key projects such as HRIS, CMS, E-Commerce, E-Ticketing, and Petty Cash Management, among others."
+      }
     },
     {
       id: 2,
@@ -164,7 +197,10 @@ export const portfolioData = {
       position: "Junior Programmer",
       location: "Jakarta Utara",
       period: "Nov 2019 - Mei 2022",
-      description: "Berperan sebagai Junior Programmer dalam tim pengembangan software, terlibat dalam proses pengembangan aplikasi dan sistem internal perusahaan."
+      description: {
+        id: "Berperan sebagai Junior Programmer dalam tim pengembangan software, terlibat dalam proses pengembangan aplikasi dan sistem internal perusahaan.",
+        en: "Served as a Junior Programmer on the software development team, involved in developing the company's applications and internal systems."
+      }
     },
     {
       id: 3,
@@ -172,7 +208,10 @@ export const portfolioData = {
       position: "Karyawan Magang",
       location: "Cilegon",
       period: "2019",
-      description: "Ditempatkan pada Subbagian Umum Dan Kepatuhan Internal (SUKI). Mengerjakan laporan keluar masuk barang berupa ATK."
+      description: {
+        id: "Ditempatkan pada Subbagian Umum Dan Kepatuhan Internal (SUKI). Mengerjakan laporan keluar masuk barang berupa ATK.",
+        en: "Assigned to the General Affairs and Internal Compliance Subdivision (SUKI). Handled incoming and outgoing goods reports for office stationery."
+      }
     }
   ],
 
@@ -183,28 +222,40 @@ export const portfolioData = {
       institution: "Institut Teknologi dan Bisnis Swadharma",
       degree: "S1 Teknik Informatika",
       period: "Sep 2021 - Sep 2025",
-      description: "Berlokasi di Jakarta Pusat. IPK: 3.79/4.00."
+      description: {
+        id: "Berlokasi di Jakarta Pusat. IPK: 3.79/4.00.",
+        en: "Located in Central Jakarta. GPA: 3.79/4.00."
+      }
     },
     {
       id: 2,
       institution: "SMK Negeri 1 Pandeglang",
       degree: "Sekolah Menengah Kejuruan",
       period: "2016 - 2019",
-      description: "Berlokasi di Pandeglang, Banten."
+      description: {
+        id: "Berlokasi di Pandeglang, Banten.",
+        en: "Located in Pandeglang, Banten."
+      }
     },
     {
       id: 3,
       institution: "SMP Negeri 2 Cimanuk",
       degree: "Sekolah Menengah Pertama",
       period: "2013 - 2016",
-      description: "Berlokasi di Pandeglang, Banten."
+      description: {
+        id: "Berlokasi di Pandeglang, Banten.",
+        en: "Located in Pandeglang, Banten."
+      }
     },
     {
       id: 4,
       institution: "SDN 2 Kadubungbang",
       degree: "Sekolah Dasar",
       period: "2007 - 2013",
-      description: "Berlokasi di Pandeglang, Banten."
+      description: {
+        id: "Berlokasi di Pandeglang, Banten.",
+        en: "Located in Pandeglang, Banten."
+      }
     }
   ],
 
@@ -212,26 +263,50 @@ export const portfolioData = {
   services: [
     {
       id: 1,
-      title: "Web Development",
-      description: "Pembuatan website responsive dan modern sesuai kebutuhan bisnis Anda, mulai dari company profile hingga aplikasi web kompleks",
+      title: {
+        id: "Web Development",
+        en: "Web Development"
+      },
+      description: {
+        id: "Pembuatan website responsive dan modern sesuai kebutuhan bisnis Anda, mulai dari company profile hingga aplikasi web kompleks",
+        en: "Building responsive, modern websites tailored to your business needs, from company profiles to complex web applications"
+      },
       icon: "\uD83D\uDCBB"
     },
     {
       id: 2,
-      title: "Backend Development",
-      description: "Pengembangan server-side application, REST API, dan sistem manajemen database yang scalable dan reliable",
+      title: {
+        id: "Backend Development",
+        en: "Backend Development"
+      },
+      description: {
+        id: "Pengembangan server-side application, REST API, dan sistem manajemen database yang scalable dan reliable",
+        en: "Development of scalable and reliable server-side applications, REST APIs, and database management systems"
+      },
       icon: "\uD83D\uDD27"
     },
     {
       id: 3,
-      title: "API Development",
-      description: "Perancangan dan pengembangan REST API yang terstruktur, aman, dan terdokumentasi dengan baik",
+      title: {
+        id: "API Development",
+        en: "API Development"
+      },
+      description: {
+        id: "Perancangan dan pengembangan REST API yang terstruktur, aman, dan terdokumentasi dengan baik",
+        en: "Design and development of well-structured, secure, and well-documented REST APIs"
+      },
       icon: "\uD83D\uDD17"
     },
     {
       id: 4,
-      title: "Database Design",
-      description: "Perancangan skema database yang efisien dan optimal menggunakan PostgreSQL atau MySQL",
+      title: {
+        id: "Database Design",
+        en: "Database Design"
+      },
+      description: {
+        id: "Perancangan skema database yang efisien dan optimal menggunakan PostgreSQL atau MySQL",
+        en: "Design of efficient and optimal database schemas using PostgreSQL or MySQL"
+      },
       icon: "\uD83D\uDDC4\uFE0F"
     }
   ],
@@ -243,7 +318,10 @@ export const portfolioData = {
       title: "Database Management System",
       issuer: "Dicoding / Platform Sertifikasi",
       date: "2024",
-      description: "Sertifikasi di bidang Database Management System mencakup konsep dan implementasi database relasional",
+      description: {
+        id: "Sertifikasi di bidang Database Management System mencakup konsep dan implementasi database relasional",
+        en: "Certification in Database Management System covering the concepts and implementation of relational databases"
+      },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_dbms.pdf",
       credentialId: "",
@@ -254,7 +332,10 @@ export const portfolioData = {
       title: "HR & Database Management System",
       issuer: "Dicoding / Platform Sertifikasi",
       date: "2024",
-      description: "Sertifikasi pengelolaan HR dan sistem manajemen database dalam konteks bisnis",
+      description: {
+        id: "Sertifikasi pengelolaan HR dan sistem manajemen database dalam konteks bisnis",
+        en: "Certification in HR management and database management systems in a business context"
+      },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_hr_dbms.pdf",
       credentialId: "",
@@ -265,7 +346,10 @@ export const portfolioData = {
       title: "PHP Pemula",
       issuer: "Dicoding",
       date: "2023",
-      description: "Sertifikasi pemrograman PHP untuk pemula mencakup dasar-dasar bahasa PHP dan pengembangan web",
+      description: {
+        id: "Sertifikasi pemrograman PHP untuk pemula mencakup dasar-dasar bahasa PHP dan pengembangan web",
+        en: "PHP programming certification for beginners covering PHP language fundamentals and web development"
+      },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_php_pemula.pdf",
       credentialId: "",
@@ -276,7 +360,10 @@ export const portfolioData = {
       title: "PostgreSQL",
       issuer: "Platform Sertifikasi",
       date: "2023",
-      description: "Sertifikasi penggunaan dan pengelolaan database PostgreSQL",
+      description: {
+        id: "Sertifikasi penggunaan dan pengelolaan database PostgreSQL",
+        en: "Certification in the use and management of PostgreSQL databases"
+      },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_postgresql.pdf",
       credentialId: "",
@@ -287,7 +374,10 @@ export const portfolioData = {
       title: "SQL Basic",
       issuer: "HackerRank",
       date: "2023",
-      description: "Sertifikasi kemampuan dasar SQL mencakup query, join, dan manipulasi data",
+      description: {
+        id: "Sertifikasi kemampuan dasar SQL mencakup query, join, dan manipulasi data",
+        en: "Certification of basic SQL skills covering queries, joins, and data manipulation"
+      },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_sql_basic.pdf",
       credentialId: "",
@@ -298,7 +388,10 @@ export const portfolioData = {
       title: "SQL for Data Science",
       issuer: "Platform Sertifikasi",
       date: "2023",
-      description: "Sertifikasi penggunaan SQL dalam konteks data science dan analisis data",
+      description: {
+        id: "Sertifikasi penggunaan SQL dalam konteks data science dan analisis data",
+        en: "Certification in using SQL in the context of data science and data analysis"
+      },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_sql_data_science.pdf",
       credentialId: "",
@@ -309,7 +402,10 @@ export const portfolioData = {
       title: "Web Development",
       issuer: "Platform Sertifikasi",
       date: "2023",
-      description: "Sertifikasi pengembangan web mencakup frontend dan backend development",
+      description: {
+        id: "Sertifikasi pengembangan web mencakup frontend dan backend development",
+        en: "Web development certification covering both frontend and backend development"
+      },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_web_dev.pdf",
       credentialId: "",
@@ -320,7 +416,10 @@ export const portfolioData = {
       title: "Sertifikasi Kompetensi (UKOM)",
       issuer: "Lembaga Sertifikasi Profesi",
       date: "2024",
-      description: "Uji kompetensi profesi di bidang teknologi informasi",
+      description: {
+        id: "Uji kompetensi profesi di bidang teknologi informasi",
+        en: "Professional competency assessment in the field of information technology"
+      },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_ukom.pdf",
       credentialId: "",
@@ -331,7 +430,10 @@ export const portfolioData = {
       title: "Sertifikat Magang",
       issuer: "PT. Sentra Inovasi Solusindo",
       date: "2022",
-      description: "Sertifikat penyelesaian program magang sebagai Full Stack Developer",
+      description: {
+        id: "Sertifikat penyelesaian program magang sebagai Full Stack Developer",
+        en: "Certificate of completion of an internship program as a Full Stack Developer"
+      },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_magang.pdf",
       credentialId: "",
@@ -342,7 +444,10 @@ export const portfolioData = {
       title: "Futsal Championship",
       issuer: "Panitia Turnamen",
       date: "2023",
-      description: "Sertifikat partisipasi dalam kejuaraan futsal",
+      description: {
+        id: "Sertifikat partisipasi dalam kejuaraan futsal",
+        en: "Certificate of participation in a futsal championship"
+      },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_futsal.pdf",
       credentialId: "",
@@ -353,7 +458,10 @@ export const portfolioData = {
       title: "Seminar Technopreneurship",
       issuer: "Penyelenggara Seminar",
       date: "2023",
-      description: "Sertifikat keikutsertaan dalam seminar technopreneurship tentang inovasi teknologi dan kewirausahaan",
+      description: {
+        id: "Sertifikat keikutsertaan dalam seminar technopreneurship tentang inovasi teknologi dan kewirausahaan",
+        en: "Certificate of attendance at a technopreneurship seminar on technological innovation and entrepreneurship"
+      },
       credentialUrl: "",
       certificateUrl: "/image/cert/Sertifikat Seminar Technopreneurship.pdf.pdf",
       credentialId: "",
@@ -364,7 +472,10 @@ export const portfolioData = {
       title: "Webinar Swadharma",
       issuer: "Swadharma",
       date: "2023",
-      description: "Sertifikat keikutsertaan dalam webinar Swadharma",
+      description: {
+        id: "Sertifikat keikutsertaan dalam webinar Swadharma",
+        en: "Certificate of attendance at a Swadharma webinar"
+      },
       credentialUrl: "",
       certificateUrl: "/image/cert/Sertifikasi Webinar Swadharma Aditya.pdf",
       credentialId: "",

@@ -1,24 +1,27 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ViewerCounter from './ViewerCounter'
+import { useLanguage } from '../hooks/useLanguage.js'
 
 const Hero = ({ data, social }) => {
+  const { t } = useLanguage()
+
   return (
     <section className="hero">
       <div className="container">
         <div className="hero-content">
           <div className="hero-text">
-            <p className="hero-greeting">Hi, saya</p>
+            <p className="hero-greeting">{t('hero.greeting')}</p>
             <h1 className="hero-title">{data.name}</h1>
-            <h2 className="hero-subtitle">{data.title}</h2>
-            <p className="hero-bio">{data.bio}</p>
+            <h2 className="hero-subtitle">{t(data.title)}</h2>
+            <p className="hero-bio">{t(data.bio)}</p>
             
             <div className="hero-buttons">
               <Link to="/contact" className="btn btn-primary">
-                Hubungi Saya
+                {t('btn.contactMe')}
               </Link>
               <a href={data.resume} className="btn btn-outline" download="CV Aditya Full Stack Developer.pdf">
-                Download CV
+                {t('btn.downloadCv')}
               </a>
             </div>
 

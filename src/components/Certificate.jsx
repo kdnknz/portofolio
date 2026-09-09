@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import SectionTitle from './SectionTitle.jsx'
 import BackButton from './BackButton.jsx'
+import { useLanguage } from '../hooks/useLanguage.js'
 
 const isPdf = (url) => url && url.toLowerCase().endsWith('.pdf')
 
@@ -61,13 +62,15 @@ const CertificatePreview = ({ cert }) => {
 }
 
 const Certificate = ({ data }) => {
+  const { t } = useLanguage()
+
   return (
     <section className="page-section">
       <BackButton />
       <div className="container">
         <SectionTitle 
-          title="Sertifikat" 
-          subtitle="Sertifikat dan pencapaian profesional" 
+          title={t('section.certificate')} 
+          subtitle={t('section.certificate.subtitle')} 
         />
 
         <div className="certificates-grid">
@@ -81,7 +84,7 @@ const Certificate = ({ data }) => {
                   <span className="certificate-date">{cert.date}</span>
                 </div>
                 <h4>{cert.issuer}</h4>
-                <p>{cert.description}</p>
+                <p>{t(cert.description)}</p>
                 
                 {cert.skills && (
                   <div className="certificate-skills">

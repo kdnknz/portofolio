@@ -1,15 +1,18 @@
 import React from 'react'
 import SectionTitle from './SectionTitle.jsx'
 import BackButton from './BackButton.jsx'
+import { useLanguage } from '../hooks/useLanguage.js'
 
 const Education = ({ data }) => {
+  const { t } = useLanguage()
+
   return (
     <section className="page-section">
       <BackButton />
       <div className="container">
         <SectionTitle 
-          title="Riwayat Pendidikan" 
-          subtitle="Perjalanan akademik saya" 
+          title={t('section.education')} 
+          subtitle={t('section.education.subtitle')} 
         />
 
         <div className="education-list">
@@ -22,7 +25,7 @@ const Education = ({ data }) => {
                 </div>
                 <span className="education-period">{edu.period}</span>
               </div>
-              <p>{edu.description}</p>
+              <p>{t(edu.description)}</p>
             </div>
           ))}
         </div>

@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { useLanguage } from '../hooks/useLanguage.js'
+import LanguageSelector from './LanguageSelector.jsx'
 
 const Header = ({ data }) => {
   const [isScrolled, setIsScrolled] = useState(false)
   const location = useLocation()
+  const { t } = useLanguage()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +30,7 @@ const Header = ({ data }) => {
                 to="/" 
                 className={location.pathname === '/' ? 'active' : ''}
               >
-                Home
+                {t('nav.home')}
               </Link>
             </li>
             <li>
@@ -35,7 +38,7 @@ const Header = ({ data }) => {
                 to="/skills" 
                 className={location.pathname === '/skills' ? 'active' : ''}
               >
-                Skills
+                {t('nav.skills')}
               </Link>
             </li>
             <li>
@@ -43,7 +46,7 @@ const Header = ({ data }) => {
                 to="/experience" 
                 className={location.pathname === '/experience' ? 'active' : ''}
               >
-                Experience
+                {t('nav.experience')}
               </Link>
             </li>
             <li>
@@ -55,10 +58,12 @@ const Header = ({ data }) => {
                     : ''
                 }
               >
-                Others
+                {t('nav.others')}
               </Link>
             </li>
           </ul>
+
+          <LanguageSelector />
         </nav>
       </div>
 
@@ -86,6 +91,11 @@ const Header = ({ data }) => {
           display: flex;
           justify-content: space-between;
           align-items: center;
+          gap: 1rem;
+        }
+
+        .nav :global(.lang-selector) {
+          margin-left: 0.5rem;
         }
 
         .nav-brand a {

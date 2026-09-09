@@ -1,13 +1,16 @@
 import React from 'react'
 import SectionTitle from './SectionTitle.jsx'
+import { useLanguage } from '../hooks/useLanguage.js'
 
 const Experience = ({ data }) => {
+  const { t } = useLanguage()
+
   return (
     <section className="page-section">
       <div className="container">
         <SectionTitle 
-          title="Pengalaman Kerja" 
-          subtitle="Perjalanan karir dan pengalaman profesional saya" 
+          title={t('section.experience')} 
+          subtitle={t('section.experience.subtitle')} 
         />
 
         <div className="timeline">
@@ -20,7 +23,7 @@ const Experience = ({ data }) => {
                   <span className="timeline-period">{exp.period}</span>
                 </div>
                 <h4>{exp.company}{exp.location ? ` · ${exp.location}` : ''}</h4>
-                <p>{exp.description}</p>
+                <p>{t(exp.description)}</p>
               </div>
             </div>
           ))}

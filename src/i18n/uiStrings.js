@@ -93,6 +93,20 @@ export const uiStrings = {
     en: "I'm open to discussing new projects, creative ideas, or collaboration opportunities."
   },
 
+  // About page — project call-to-action (About.jsx)
+  'about.cta.title': {
+    id: 'Punya ide project berbasis web?',
+    en: 'Have a web-based project in mind?'
+  },
+  'about.cta.text': {
+    id: 'Butuh dibuatkan project berbasis web? Mulai dari project skripsi, aplikasi UMKM, company profile, hingga sistem custom lainnya, boleh langsung hubungi saya. Soal harga bisa didiskusikan sesuai kebutuhan dan budget Anda.',
+    en: 'Need a web-based project built? From thesis (skripsi) projects and small-business (UMKM) apps to company profiles and other custom systems, feel free to reach out. Pricing is negotiable based on your needs and budget.'
+  },
+  'about.cta.button': {
+    id: 'Diskusi via WhatsApp',
+    en: 'Discuss via WhatsApp'
+  },
+
   // Others page cards (Others.jsx) — title + description per card
   'others.projects.title': { id: 'Projects', en: 'Projects' },
   'others.projects.desc': {

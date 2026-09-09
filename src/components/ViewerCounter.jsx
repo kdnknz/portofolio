@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import { useLanguage } from '../hooks/useLanguage.js'
 
 const SESSION_KEY = 'viewer_counted'
 
 const ViewerCounter = () => {
+  const { language, t } = useLanguage()
   const [count, setCount] = useState(null)
   const [status, setStatus] = useState('loading') // 'loading' | 'ready' | 'error'
 
@@ -44,11 +46,11 @@ const ViewerCounter = () => {
   return (
     <div className="viewer-counter">
       {status === 'loading' ? (
-        <span className="viewer-loading">Memuat jumlah pengunjung...</span>
+        <span className="viewer-loading">{t('viewer.loading')}</span>
       ) : (
         <span className="viewer-count">
           <span className="viewer-icon" aria-hidden="true">👁</span>
-          {count.toLocaleString('id-ID')} total pengunjung
+          {count.toLocaleString(language === 'en' ? 'en-US' : 'id-ID')} {t('viewer.total')}
         </span>
       )}
       <style jsx>{`

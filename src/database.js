@@ -40,19 +40,20 @@ export const portfolioData = {
       { name: "HTML5", icon: "\uD83C\uDF10", color: "#E34F26", level: 90 },
       { name: "CSS3", icon: "\uD83C\uDFA8", color: "#1572B6", level: 85 },
       { name: "JavaScript", icon: "\u26A1", color: "#F7DF1E", level: 85 },
-      { name: "TypeScript", icon: "\uD83D\uDD37", color: "#3178C6", level: 75 }
+      { name: "TypeScript", icon: "\uD83D\uDD37", color: "#3178C6", level: 80 }
     ],
     backend: [
       { name: "PHP", icon: "\uD83D\uDC18", color: "#777BB4", level: 90 },
       { name: "Node.js", icon: "\uD83D\uDFE2", color: "#339933", level: 80 },
       { name: "REST API", icon: "\uD83D\uDD17", color: "#FF6B35", level: 90 },
-      { name: "Go", icon: "\uD83D\uDC39", color: "#00ADD8", level: 65 },
+      { name: "Go", icon: "\uD83D\uDC39", color: "#00ADD8", level: 75 },
       { name: "Java", icon: "\u2615", color: "#ED8B00", level: 50 },
-      { name: "Python", icon: "\uD83D\uDC0D", color: "#3776AB", level: 60 }
+      { name: "Python", icon: "\uD83D\uDC0D", color: "#3776AB", level: 60 },
+      { name: "TypeScript", icon: "\uD83D\uDD37", color: "#3178C6", level: 80 }
     ],
     framework: [
       { name: "React.js", icon: "\u269B\uFE0F", color: "#61DAFB", level: 75 },
-      { name: "Next.js", icon: "\u25B2", color: "#000000", level: 70 },
+      { name: "Next.js", icon: "\u25B2", color: "#000000", level: 75 },
       { name: "Vue.js", icon: "\uD83D\uDFE9", color: "#4FC08D", level: 70 },
       { name: "Bootstrap", icon: "\uD83C\uDD71\uFE0F", color: "#7952B3", level: 90 },
       { name: "Tailwind CSS", icon: "\uD83C\uDF2C\uFE0F", color: "#06B6D4", level: 80 },
@@ -62,31 +63,31 @@ export const portfolioData = {
       { name: "Livewire", icon: "\uD83D\uDD04", color: "#FB70A9", level: 75 },
       { name: "Inertia.js", icon: "\uD83E\uDDED", color: "#9553E9", level: 75 },
       { name: "CodeIgniter", icon: "\uD83D\uDD25", color: "#EF4223", level: 80 },
-      { name: "CakePHP", icon: "\uD83C\uDF70", color: "#D33C43", level: 70 },
+      { name: "CakePHP", icon: "\uD83C\uDF70", color: "#D33C43", level: 90 },
       { name: "OpenCart", icon: "\uD83D\uDED2", color: "#2AA9E0", level: 70 },
       { name: "Express.js", icon: "\uD83D\uDE82", color: "#000000", level: 80 },
       { name: "Gin", icon: "\uD83C\uDF78", color: "#00ADD8", level: 65 }
     ],
     tools: [
       { name: "VS Code", icon: "\uD83D\uDCBB", color: "#007ACC", level: 95 },
-      { name: "Kiro (AWS)", icon: "\uD83E\uDD16", color: "#FF9900", level: 80 },
+      { name: "Kiro (AWS)", icon: "\uD83E\uDD16", color: "#FF9900", level: 90 },
       { name: "Claude AI", icon: "\uD83E\uDDE0", color: "#6B4FBB", level: 85 },
       { name: "AWS", icon: "\u2601\uFE0F", color: "#FF9900", level: 70 },
       { name: "Linux Server", icon: "\uD83D\uDDA5\uFE0F", color: "#FCC624", level: 80 },
-      { name: "Postman", icon: "\uD83D\uDCEE", color: "#FF6C37", level: 80 },
-      { name: "Git", icon: "\uD83D\uDCDD", color: "#F05032", level: 75 },
-      { name: "GitHub", icon: "\uD83D\uDC19", color: "#181717", level: 75 },
+      { name: "Postman", icon: "\uD83D\uDCEE", color: "#FF6C37", level: 90 },
+      { name: "Git", icon: "\uD83D\uDCDD", color: "#F05032", level: 90 },
+      { name: "GitHub", icon: "\uD83D\uDC19", color: "#181717", level: 90 },
       { name: "GitLab", icon: "\uD83E\uDD8A", color: "#FC6D26", level: 75 },
       { name: "Docker", icon: "\uD83D\uDC33", color: "#2496ED", level: 70 },
-      { name: "Nginx", icon: "\uD83D\uDFE9", color: "#009639", level: 75 },
-      { name: "Apache", icon: "\uD83E\uDEB6", color: "#D22128", level: 75 },
+      { name: "Nginx", icon: "\uD83D\uDFE9", color: "#009639", level: 90 },
+      { name: "Apache", icon: "\uD83E\uDEB6", color: "#D22128", level: 90 },
       { name: "Kafka", icon: "\uD83D\uDCE8", color: "#231F20", level: 70 }
     ],
     database: [
       { name: "PostgreSQL", icon: "\uD83D\uDC18", color: "#336791", level: 90 },
       { name: "MySQL", icon: "\uD83D\uDC2C", color: "#4479A1", level: 90 },
-      { name: "MariaDB", icon: "\uD83E\uDD9C", color: "#003545", level: 80 },
-      { name: "SQLite", icon: "\uD83E\uDEB6", color: "#003B57", level: 75 }
+      { name: "MariaDB", icon: "\uD83E\uDD9C", color: "#003545", level: 90 },
+      { name: "SQLite", icon: "\uD83E\uDEB6", color: "#003B57", level: 90 }
     ]
   },
 
@@ -111,7 +112,7 @@ export const portfolioData = {
         id: "Sistem pengiriman pesan terintegrasi dengan Meta API untuk mengirim WhatsApp secara otomatis ke pelanggan",
         en: "A messaging system integrated with the Meta API to automatically send WhatsApp messages to customers"
       },
-      technologies: ["Laravel", "Node.js", "REST API", "Meta API", "WhatsApp"],
+      technologies: ["Laravel", "Typescript", "Express.js", "REST API", "Meta API", "WhatsApp"],
       liveUrl: "",
       githubUrl: "",
       featured: true
@@ -123,7 +124,7 @@ export const portfolioData = {
         id: "Aplikasi e-commerce lengkap dengan manajemen produk, keranjang belanja, dan sistem pembayaran",
         en: "A complete e-commerce application with product management, shopping cart, and payment system"
       },
-      technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+      technologies: ["Opencart", "PHP", "MySQL", "Bootstrap"],
       liveUrl: "",
       githubUrl: "",
       featured: true
@@ -147,7 +148,7 @@ export const portfolioData = {
         id: "Sistem manajemen pengiriman kurir dengan tracking paket dan manajemen rute pengiriman",
         en: "A courier delivery management system with package tracking and delivery route management"
       },
-      technologies: ["Laravel", "Node.js", "PostgreSQL", "REST API"],
+      technologies: ["CakePHP", "Javascript", "PostgreSQL", "REST API"],
       liveUrl: "",
       githubUrl: "",
       featured: false

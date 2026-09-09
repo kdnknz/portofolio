@@ -77,5 +77,51 @@ export const uiStrings = {
   },
 
   // Hero greeting (Hero.jsx)
-  'hero.greeting': { id: 'Hi, saya', en: "Hi, I'm" }
+  'hero.greeting': { id: 'Hi, saya', en: "Hi, I'm" },
+
+  // Viewer counter (ViewerCounter.jsx)
+  'viewer.loading': {
+    id: 'Memuat jumlah pengunjung...',
+    en: 'Loading visitor count...'
+  },
+  'viewer.total': { id: 'total pengunjung', en: 'total visitors' },
+
+  // Contact intro (Contact.jsx)
+  'contact.heading': { id: 'Mari Terhubung', en: "Let's Connect" },
+  'contact.intro': {
+    id: 'Saya terbuka untuk mendiskusikan project baru, ide kreatif, atau kesempatan kolaborasi.',
+    en: "I'm open to discussing new projects, creative ideas, or collaboration opportunities."
+  },
+
+  // Others page cards (Others.jsx) — title + description per card
+  'others.projects.title': { id: 'Projects', en: 'Projects' },
+  'others.projects.desc': {
+    id: 'Project-project yang telah saya kerjakan',
+    en: 'Projects I have worked on'
+  },
+  'others.services.title': { id: 'Services', en: 'Services' },
+  'others.services.desc': {
+    id: 'Layanan yang saya tawarkan',
+    en: 'Services I offer'
+  },
+  'others.education.title': { id: 'Education', en: 'Education' },
+  'others.education.desc': {
+    id: 'Riwayat pendidikan saya',
+    en: 'My educational background'
+  },
+  'others.certificate.title': { id: 'Certificate', en: 'Certificate' },
+  'others.certificate.desc': {
+    id: 'Sertifikat yang telah saya peroleh',
+    en: 'Certificates I have earned'
+  },
+  'others.about.title': { id: 'About Me', en: 'About Me' },
+  'others.about.desc': {
+    id: 'Tentang background dan pengalaman saya',
+    en: 'About my background and experience'
+  },
+  'others.contact.title': { id: 'Contact', en: 'Contact' },
+  'others.contact.desc': {
+    id: 'Hubungi saya untuk kolaborasi',
+    en: 'Get in touch for collaboration'
+  }
 }

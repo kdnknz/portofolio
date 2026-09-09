@@ -7,12 +7,12 @@ const Others = () => {
   const { t } = useLanguage()
 
   const otherPages = [
-    { id: 1, title: "Projects", description: "Project-project yang telah saya kerjakan", path: "/projects" },
-    { id: 2, title: "Services", description: "Layanan yang saya tawarkan", path: "/services" },
-    { id: 3, title: "Education", description: "Riwayat pendidikan saya", path: "/education" },
-    { id: 4, title: "Certificate", description: "Sertifikat yang telah saya peroleh", path: "/certificate" },
-    { id: 5, title: "About Me", description: "Tentang background dan pengalaman saya", path: "/about" },
-    { id: 6, title: "Contact", description: "Hubungi saya untuk kolaborasi", path: "/contact" }
+    { id: 1, titleKey: 'others.projects.title', descKey: 'others.projects.desc', path: "/projects" },
+    { id: 2, titleKey: 'others.services.title', descKey: 'others.services.desc', path: "/services" },
+    { id: 3, titleKey: 'others.education.title', descKey: 'others.education.desc', path: "/education" },
+    { id: 4, titleKey: 'others.certificate.title', descKey: 'others.certificate.desc', path: "/certificate" },
+    { id: 5, titleKey: 'others.about.title', descKey: 'others.about.desc', path: "/about" },
+    { id: 6, titleKey: 'others.contact.title', descKey: 'others.contact.desc', path: "/contact" }
   ]
 
   return (
@@ -27,8 +27,8 @@ const Others = () => {
           {otherPages.map((page) => (
             <Link key={page.id} to={page.path} className="other-card">
               <div className="card-content">
-                <h3>{page.title}</h3>
-                <p>{page.description}</p>
+                <h3>{t(page.titleKey)}</h3>
+                <p>{t(page.descKey)}</p>
               </div>
               <span className="card-arrow">→</span>
             </Link>

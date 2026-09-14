@@ -17,7 +17,7 @@ const Hero = ({ data, social }) => {
             <p className="hero-bio">{t(data.bio)}</p>
             
             <div className="hero-buttons">
-              <Link to="/contact" className="btn btn-primary">
+              <Link to="/about" className="btn btn-primary">
                 {t('btn.contactMe')}
               </Link>
               <a href={data.resume} className="btn btn-outline" download="CV Aditya Full Stack Developer.pdf">

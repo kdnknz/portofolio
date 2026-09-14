@@ -53,7 +53,7 @@ const Header = ({ data }) => {
               <Link 
                 to="/others" 
                 className={
-                  ['/others', '/about', '/projects', '/education', '/services', '/contact', '/certificate'].includes(location.pathname)
+                  ['/others', '/about', '/projects', '/education', '/services', '/certificate'].includes(location.pathname)
                     ? 'active' 
                     : ''
                 }

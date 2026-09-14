@@ -16,7 +16,7 @@ const MobileBottomNav = () => {
 
   const isActive = (path) => {
     if (path === '/others') {
-      return ['/others', '/about', '/projects', '/education', '/services', '/contact', '/certificate'].includes(location.pathname)
+      return ['/others', '/about', '/projects', '/education', '/services', '/certificate'].includes(location.pathname)
     }
     return location.pathname === path
   }

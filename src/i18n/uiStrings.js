@@ -35,7 +35,6 @@ export const uiStrings = {
   'section.services': { id: 'Layanan', en: 'Services' },
   'section.education': { id: 'Riwayat Pendidikan', en: 'Education' },
   'section.certificate': { id: 'Sertifikat', en: 'Certificates' },
-  'section.contact': { id: 'Hubungi Saya', en: 'Contact Me' },
   'section.others': { id: 'Explore More', en: 'Explore More' },
 
   // Section subtitles
@@ -66,10 +65,6 @@ export const uiStrings = {
   'section.certificate.subtitle': {
     id: 'Sertifikat dan pencapaian profesional',
     en: 'Certificates and professional achievements'
-  },
-  'section.contact.subtitle': {
-    id: 'Mari berkolaborasi dan wujudkan project Anda',
-    en: "Let's collaborate and bring your project to life"
   },
   'section.others.subtitle': {
     id: 'Jelajahi lebih dalam tentang saya',
@@ -132,10 +127,5 @@ export const uiStrings = {
   'others.about.desc': {
     id: 'Tentang background dan pengalaman saya',
     en: 'About my background and experience'
-  },
-  'others.contact.title': { id: 'Contact', en: 'Contact' },
-  'others.contact.desc': {
-    id: 'Hubungi saya untuk kolaborasi',
-    en: 'Get in touch for collaboration'
   }
 }

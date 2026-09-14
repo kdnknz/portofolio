@@ -11,8 +11,7 @@ const Others = () => {
     { id: 2, titleKey: 'others.services.title', descKey: 'others.services.desc', path: "/services" },
     { id: 3, titleKey: 'others.education.title', descKey: 'others.education.desc', path: "/education" },
     { id: 4, titleKey: 'others.certificate.title', descKey: 'others.certificate.desc', path: "/certificate" },
-    { id: 5, titleKey: 'others.about.title', descKey: 'others.about.desc', path: "/about" },
-    { id: 6, titleKey: 'others.contact.title', descKey: 'others.contact.desc', path: "/contact" }
+    { id: 5, titleKey: 'others.about.title', descKey: 'others.about.desc', path: "/about" }
   ]
 
   return (

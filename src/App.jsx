@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { portfolioData } from './database.js'
 import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
@@ -10,7 +10,6 @@ import Experience from './components/Experience.jsx'
 import Education from './components/Education.jsx'
 import Certificate from './components/Certificate.jsx'
 import Services from './components/Services.jsx'
-import Contact from './components/Contact.jsx'
 import Others from './components/Others.jsx'
 import Footer from './components/Footer.jsx'
 import ParticleBackground from './components/ParticleBackground.jsx'
@@ -28,7 +27,7 @@ const AnimatedRoutes = () => {
           <Hero data={portfolioData.personal} social={portfolioData.social} />
         } />
         <Route path="/about" element={
-          <About data={portfolioData.personal} />
+          <About data={portfolioData.personal} social={portfolioData.social} />
         } />
         <Route path="/skills" element={
           <Skills data={portfolioData.skills} />
@@ -51,11 +50,9 @@ const AnimatedRoutes = () => {
         <Route path="/services" element={
           <Services data={portfolioData.services} />
         } />
-        <Route path="/about" element={
-          <About data={portfolioData.personal} />
-        } />
+        {/* Contact was merged into About; keep old /contact links working */}
         <Route path="/contact" element={
-          <Contact data={portfolioData.personal} social={portfolioData.social} />
+          <Navigate to="/about" replace />
         } />
       </Routes>
     </main>

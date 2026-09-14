@@ -94,8 +94,8 @@ export const uiStrings = {
     en: 'Have a web-based project in mind?'
   },
   'about.cta.text': {
-    id: 'Butuh dibuatkan project berbasis web? Mulai dari project skripsi, aplikasi UMKM, company profile, hingga sistem custom lainnya, boleh langsung hubungi saya. Soal harga bisa didiskusikan sesuai kebutuhan dan budget Anda.',
-    en: 'Need a web-based project built? From thesis (skripsi) projects and small-business (UMKM) apps to company profiles and other custom systems, feel free to reach out. Pricing is negotiable based on your needs and budget.'
+    id: 'Butuh dibuatkan project berbasis web? Mulai dari project portofolio, project skripsi, aplikasi UMKM, company profile, hingga sistem custom lainnya, boleh langsung hubungi saya. Soal harga bisa didiskusikan sesuai kebutuhan dan budget Anda.',
+    en: 'Need a web-based project built? From portfolio projects and thesis (skripsi) projects to small-business (UMKM) apps, company profiles, and other custom systems, feel free to reach out. Pricing is negotiable based on your needs and budget.'
   },
   'about.cta.button': {
     id: 'Diskusi via WhatsApp',

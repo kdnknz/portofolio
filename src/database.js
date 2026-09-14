@@ -22,7 +22,10 @@ export const portfolioData = {
       en: "Full Stack Developer with over 6 years of experience in software development. Accustomed to being involved throughout the development process, from requirements analysis to system maintenance, with a focus on quality, reliability, and effective problem solving."
     },
     avatar: "/image/adit.jpeg",
-    resume: "/CV Aditya Full Stack Developer.pdf"
+    resume: {
+      id: "/CV Aditya Full Stack Developer.pdf",
+      en: "/CV Aditya Full Stack Developer-eng.pdf"
+    }
   },
 
   // Social Media Links

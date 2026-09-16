@@ -136,8 +136,8 @@ export const portfolioData = {
       id: 4,
       title: "LSM — Laporan Stok Malam",
       description: {
-        id: "Sistem laporan stok malam untuk Bakmie GM, mencatat dan merekap stok bahan baku setiap akhir hari operasional",
-        en: "A nightly stock reporting system for Bakmie GM that records and recaps raw material stock at the end of each operational day"
+        id: "Aplikasi laporan stok malam untuk Bakmie GM. Stok malam diinput, lalu sistem menghitung usulan kedatangan barang (SPB) dari masing-masing DC sesuai kebutuhan tiap store Bakmie GM",
+        en: "A nightly stock reporting application for Bakmie GM. Nightly stock is entered, then the system calculates the goods arrival proposal (SPB) from each DC according to the needs of each Bakmie GM store"
       },
       technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
       liveUrl: "",
@@ -192,8 +192,8 @@ export const portfolioData = {
       period: "Mei 2022 - Sekarang",
       icon: "/image/icon/pt_sis.png",
       description: {
-        id: "Mengembangkan berbagai proyek penting seperti HRIS, CMS, E-Commerce, E-Ticketing, dan Pengelolaan Petty Cash serta proyek lainnya.",
-        en: "Developed various key projects such as HRIS, CMS, E-Commerce, E-Ticketing, and Petty Cash Management, among others."
+        id: "Mengembangkan HRIS (Absensi) — web system & backend API, Messaging Channel System (Meta/WhatsApp) — dashboard & backend API, Courier Management System — web system & backend API, Petty Cash — web system & backend API, RajaGadai — web system & backend API, E-Commerce, LSM (Laporan Stok Malam, web based), serta E-Ticketing (web based). Job Description: Mengembangkan dan memelihara aplikasi, membuat serta mengoptimalkan API, melakukan integrasi database, memperbaiki bug, melakukan troubleshooting, serta memastikan aplikasi berjalan dengan baik sesuai kebutuhan bisnis.",
+        en: "Developed HRIS (Attendance) — web system & backend API, Messaging Channel System (Meta/WhatsApp) — dashboard & backend API, Courier Management System — web system & backend API, Petty Cash — web system & backend API, RajaGadai — web system & backend API, E-Commerce, LSM (Nightly Stock Report, web based), and E-Ticketing (web based). Job Description: Building and maintaining applications, creating and optimizing APIs, performing database integration, fixing bugs, troubleshooting, and ensuring applications run properly according to business needs."
       }
     },
     {
@@ -228,7 +228,7 @@ export const portfolioData = {
       id: 1,
       institution: "Institut Teknologi dan Bisnis Swadharma",
       degree: "S1 Teknik Informatika",
-      period: "Sep 2021 - Sep 2025",
+      period: "Sep 2021 - Agu 2025",
       icon: "/image/icon/s1.png",
       description: {
         id: "Berlokasi di Jakarta Pusat. IPK: 3.79/4.00.",
@@ -327,7 +327,7 @@ export const portfolioData = {
       id: 13,
       title: "Sertifikasi BNSP - Software Development",
       issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
-      date: "2024",
+      date: "2025",
       description: {
         id: "Sertifikasi kompetensi BNSP di bidang pemrograman dan software development sebagai pengakuan kompetensi profesional secara nasional",
         en: "BNSP competency certification in programming and software development as nationally recognized professional competency"
@@ -461,11 +461,11 @@ export const portfolioData = {
     {
       id: 8,
       title: "Sertifikasi Kompetensi (UKOM)",
-      issuer: "Lembaga Sertifikasi Profesi",
-      date: "2024",
+      issuer: "PT Krakatau Information Technology",
+      date: "2019",
       description: {
-        id: "Uji kompetensi profesi di bidang teknologi informasi",
-        en: "Professional competency assessment in the field of information technology"
+        id: "Uji kompetensi profesi di bidang teknologi informasi pada masa SMK",
+        en: "Professional competency assessment in the field of information technology during vocational high school"
       },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_ukom.pdf",

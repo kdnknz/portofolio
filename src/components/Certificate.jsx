@@ -9,6 +9,10 @@ const getCategoryStyle = (skills = []) => {
   const s = skills.join(' ').toLowerCase()
   if (s.includes('database') || s.includes('sql') || s.includes('postgresql') || s.includes('mysql'))
     return { bg: 'linear-gradient(135deg, #1a237e 0%, #0d47a1 100%)', icon: '🗄️' }
+  if (s.includes('software development') || s.includes('programming') || s.includes('bnsp'))
+    return { bg: 'linear-gradient(135deg, #0d47a1 0%, #1565c0 100%)', icon: '💻' }
+  if (s.includes('academic') || s.includes('transcript'))
+    return { bg: 'linear-gradient(135deg, #263238 0%, #455a64 100%)', icon: '🎓' }
   if (s.includes('php') || s.includes('laravel') || s.includes('web development') || s.includes('html'))
     return { bg: 'linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%)', icon: '🌐' }
   if (s.includes('data science') || s.includes('data analysis'))
@@ -24,8 +28,10 @@ const getCategoryStyle = (skills = []) => {
 
 const CertificatePreview = ({ cert }) => {
   const [showModal, setShowModal] = useState(false)
+  const [imgFailed, setImgFailed] = useState(false)
   const hasPdf = isPdf(cert.certificateUrl)
   const { bg, icon } = getCategoryStyle(cert.skills)
+  const showImage = cert.thumbnailUrl && !imgFailed
 
   return (
     <>
@@ -35,11 +41,21 @@ const CertificatePreview = ({ cert }) => {
         onClick={() => hasPdf && setShowModal(true)}
         title={hasPdf ? 'Klik untuk lihat sertifikat' : ''}
       >
-        <div className="cert-thumbnail">
-          <span className="cert-icon">{icon}</span>
-          <span className="cert-label">Sertifikat</span>
-          {hasPdf && <span className="cert-view-hint">🔍 Klik untuk lihat</span>}
-        </div>
+        {showImage ? (
+          <img
+            className="cert-thumbnail-img"
+            src={cert.thumbnailUrl}
+            alt={cert.title}
+            loading="lazy"
+            onError={() => setImgFailed(true)}
+          />
+        ) : (
+          <div className="cert-thumbnail">
+            <span className="cert-icon">{icon}</span>
+            <span className="cert-label">Sertifikat</span>
+            {hasPdf && <span className="cert-view-hint">🔍 Klik untuk lihat</span>}
+          </div>
+        )}
       </div>
 
       {showModal && (
@@ -167,6 +183,13 @@ const Certificate = ({ data }) => {
           gap: 0.4rem;
           width: 100%;
           height: 100%;
+        }
+
+        .cert-thumbnail-img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
         }
 
         .cert-icon {

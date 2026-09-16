@@ -318,6 +318,36 @@ export const portfolioData = {
   // Certificates
   certificates: [
     {
+      id: 13,
+      title: "Sertifikasi BNSP - Software Development",
+      issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
+      date: "2024",
+      description: {
+        id: "Sertifikasi kompetensi BNSP di bidang pemrograman dan software development sebagai pengakuan kompetensi profesional secara nasional",
+        en: "BNSP competency certification in programming and software development as nationally recognized professional competency"
+      },
+      credentialUrl: "",
+      certificateUrl: "/image/cert/cert_bnsp.pdf",
+      thumbnailUrl: "/image/cert/cert_bnsp.jpg",
+      credentialId: "",
+      skills: ["Software Development", "Programming", "BNSP"]
+    },
+    {
+      id: 14,
+      title: "Transkrip Nilai",
+      issuer: "Institut Teknologi dan Bisnis Swadharma",
+      date: "2025",
+      description: {
+        id: "Transkrip nilai akademik program studi S1 Teknik Informatika",
+        en: "Academic transcript for the Bachelor's degree in Informatics Engineering"
+      },
+      credentialUrl: "",
+      certificateUrl: "/image/cert/transkip.pdf",
+      thumbnailUrl: "/image/cert/transkip.jpg",
+      credentialId: "",
+      skills: ["Academic", "Transcript"]
+    },
+    {
       id: 1,
       title: "Database Management System",
       issuer: "Dicoding / Platform Sertifikasi",
@@ -328,6 +358,7 @@ export const portfolioData = {
       },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_dbms.pdf",
+      thumbnailUrl: "/image/cert/cert_dbms.jpg",
       credentialId: "",
       skills: ["Database", "SQL", "DBMS"]
     },
@@ -342,6 +373,7 @@ export const portfolioData = {
       },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_hr_dbms.pdf",
+      thumbnailUrl: "/image/cert/cert_hr_dbms.jpg",
       credentialId: "",
       skills: ["HR Management", "Database", "DBMS"]
     },
@@ -356,6 +388,7 @@ export const portfolioData = {
       },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_php_pemula.pdf",
+      thumbnailUrl: "/image/cert/cert_php_pemula.jpg",
       credentialId: "",
       skills: ["PHP", "Web Development"]
     },
@@ -370,6 +403,7 @@ export const portfolioData = {
       },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_postgresql.pdf",
+      thumbnailUrl: "/image/cert/cert_postgresql.jpg",
       credentialId: "",
       skills: ["PostgreSQL", "Database", "SQL"]
     },
@@ -384,6 +418,7 @@ export const portfolioData = {
       },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_sql_basic.pdf",
+      thumbnailUrl: "/image/cert/cert_sql_basic.jpg",
       credentialId: "",
       skills: ["SQL", "Database"]
     },
@@ -398,6 +433,7 @@ export const portfolioData = {
       },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_sql_data_science.pdf",
+      thumbnailUrl: "/image/cert/cert_sql_data_science.jpg",
       credentialId: "",
       skills: ["SQL", "Data Science", "Data Analysis"]
     },
@@ -412,6 +448,7 @@ export const portfolioData = {
       },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_web_dev.pdf",
+      thumbnailUrl: "/image/cert/cert_web_dev.jpg",
       credentialId: "",
       skills: ["Web Development", "HTML", "CSS", "JavaScript"]
     },
@@ -426,6 +463,7 @@ export const portfolioData = {
       },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_ukom.pdf",
+      thumbnailUrl: "/image/cert/cert_ukom.jpg",
       credentialId: "",
       skills: ["Kompetensi IT", "Profesional"]
     },
@@ -440,6 +478,7 @@ export const portfolioData = {
       },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_magang.pdf",
+      thumbnailUrl: "/image/cert/cert_magang.jpg",
       credentialId: "",
       skills: ["Full Stack Development", "Laravel", "PHP"]
     },
@@ -454,6 +493,7 @@ export const portfolioData = {
       },
       credentialUrl: "",
       certificateUrl: "/image/cert/cert_futsal.pdf",
+      thumbnailUrl: "/image/cert/cert_futsal.jpg",
       credentialId: "",
       skills: ["Futsal", "Olahraga"]
     },
@@ -468,6 +508,7 @@ export const portfolioData = {
       },
       credentialUrl: "",
       certificateUrl: "/image/cert/Sertifikat Seminar Technopreneurship.pdf.pdf",
+      thumbnailUrl: "/image/cert/cert_technopreneurship.jpg",
       credentialId: "",
       skills: ["Technopreneurship", "Inovasi", "Kewirausahaan"]
     },
@@ -482,6 +523,7 @@ export const portfolioData = {
       },
       credentialUrl: "",
       certificateUrl: "/image/cert/Sertifikasi Webinar Swadharma Aditya.pdf",
+      thumbnailUrl: "/image/cert/cert_webinar_swadharma.jpg",
       credentialId: "",
       skills: ["Webinar", "Pengembangan Diri"]
     }

@@ -18,11 +18,22 @@ const Experience = ({ data }) => {
             <div key={exp.id} className="timeline-item">
               <div className="timeline-marker"></div>
               <div className="timeline-content">
-                <div className="timeline-header">
-                  <h3>{exp.position}</h3>
-                  <span className="timeline-period">{exp.period}</span>
+                <div className="timeline-top">
+                  <div className="timeline-logo" aria-hidden="true">
+                    {exp.icon ? (
+                      <img src={exp.icon} alt="" loading="lazy" />
+                    ) : (
+                      <span className="timeline-logo-fallback">💼</span>
+                    )}
+                  </div>
+                  <div className="timeline-main">
+                    <div className="timeline-header">
+                      <h3>{exp.position}</h3>
+                      <span className="timeline-period">{exp.period}</span>
+                    </div>
+                    <h4>{exp.company}{exp.location ? ` · ${exp.location}` : ''}</h4>
+                  </div>
                 </div>
-                <h4>{exp.company}{exp.location ? ` · ${exp.location}` : ''}</h4>
                 <p>{t(exp.description)}</p>
               </div>
             </div>
@@ -94,6 +105,42 @@ const Experience = ({ data }) => {
           border-color: rgba(100, 181, 246, 0.3);
         }
 
+        .timeline-top {
+          display: flex;
+          align-items: flex-start;
+          gap: 0.9rem;
+          margin-bottom: 0.75rem;
+        }
+
+        .timeline-logo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 46px;
+          height: 46px;
+          flex-shrink: 0;
+          // background: #fff;
+          // border: 1px solid var(--border-color);
+          border-radius: 8px;
+          overflow: hidden;
+        }
+
+        .timeline-logo img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+
+        .timeline-logo-fallback {
+          font-size: 1.5rem;
+          line-height: 1;
+        }
+
+        .timeline-main {
+          flex: 1;
+          min-width: 0;
+        }
+
         .timeline-header {
           display: flex;
           justify-content: space-between;
@@ -120,7 +167,7 @@ const Experience = ({ data }) => {
 
         .timeline-content h4 {
           color: var(--text-light);
-          margin-bottom: 0.75rem;
+          margin: 0;
           font-weight: 500;
           font-size: 0.95rem;
         }

@@ -24,8 +24,9 @@ export const uiStrings = {
   'btn.downloadCv': { id: 'Unduh CV', en: 'Download CV' },
   'btn.contactMe': { id: 'Hubungi Saya', en: 'Contact Me' },
 
-  // WhatsApp floating button aria-label (App.jsx)
+  // WhatsApp floating button (App.jsx)
   'aria.whatsapp': { id: 'Hubungi via WhatsApp', en: 'Contact via WhatsApp' },
+  'wa.label': { id: 'Konsultasi Project', en: 'Project Consultation:' },
 
   // Section titles
   'section.about': { id: 'Tentang Saya', en: 'About Me' },

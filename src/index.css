@@ -211,29 +211,67 @@ p {
   position: fixed;
   bottom: 24px;
   right: 24px;
-  width: 56px;
-  height: 56px;
-  background: #25d366;
-  border-radius: 50%;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.45);
+  gap: 12px;
+  background: #ffffff;
+  padding: 8px 8px 8px 18px;
+  border-radius: 999px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
   z-index: 9999;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-decoration: none;
 }
 
 .wa-float:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+}
+
+.wa-float-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  white-space: nowrap;
+}
+
+.wa-float-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #25d366;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 999px;
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
   .wa-float {
     bottom: 80px;
     right: 16px;
-    width: 50px;
-    height: 50px;
+    gap: 8px;
+    padding: 6px 6px 6px 14px;
+  }
+
+  .wa-float-label {
+    font-size: 0.8rem;
+  }
+
+  .wa-float-btn {
+    font-size: 0.8rem;
+    padding: 7px 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .wa-float-label {
+    display: none;
+  }
+
+  .wa-float {
+    padding: 6px;
   }
 }

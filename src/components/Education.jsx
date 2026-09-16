@@ -19,9 +19,18 @@ const Education = ({ data }) => {
           {data.map((edu) => (
             <div key={edu.id} className="education-item">
               <div className="education-header">
-                <div>
-                  <h3>{edu.degree}</h3>
-                  <h4>{edu.institution}</h4>
+                <div className="education-title">
+                  <div className="education-logo" aria-hidden="true">
+                    {edu.icon ? (
+                      <img src={edu.icon} alt="" loading="lazy" />
+                    ) : (
+                      <span className="education-logo-fallback">🎓</span>
+                    )}
+                  </div>
+                  <div>
+                    <h3>{edu.degree}</h3>
+                    <h4>{edu.institution}</h4>
+                  </div>
                 </div>
                 <span className="education-period">{edu.period}</span>
               </div>
@@ -72,6 +81,36 @@ const Education = ({ data }) => {
           align-items: flex-start;
           margin-bottom: 0.75rem;
           gap: 1rem;
+        }
+
+        .education-title {
+          display: flex;
+          align-items: center;
+          gap: 0.9rem;
+        }
+
+        .education-logo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 46px;
+          height: 46px;
+          flex-shrink: 0;
+          // background: #fff;
+          // border: 1px solid var(--border-color);
+          border-radius: 8px;
+          overflow: hidden;
+        }
+
+        .education-logo img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+
+        .education-logo-fallback {
+          font-size: 1.5rem;
+          line-height: 1;
         }
 
         .education-header h3 {

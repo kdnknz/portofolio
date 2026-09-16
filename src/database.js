@@ -40,57 +40,57 @@ export const portfolioData = {
   // Skills
   skills: {
     frontend: [
-      { name: "HTML5", icon: "\uD83C\uDF10", color: "#E34F26", level: 90 },
-      { name: "CSS3", icon: "\uD83C\uDFA8", color: "#1572B6", level: 85 },
-      { name: "JavaScript", icon: "\u26A1", color: "#F7DF1E", level: 85 },
-      { name: "TypeScript", icon: "\uD83D\uDD37", color: "#3178C6", level: 80 }
+      { name: "HTML5", slug: "html5", icon: "\uD83C\uDF10", color: "#E34F26", level: 90 },
+      { name: "CSS3", slug: "css3", icon: "\uD83C\uDFA8", color: "#1572B6", level: 85 },
+      { name: "JavaScript", slug: "javascript", icon: "\u26A1", color: "#F7DF1E", level: 85 },
+      { name: "TypeScript", slug: "typescript", icon: "\uD83D\uDD37", color: "#3178C6", level: 80 }
     ],
     backend: [
-      { name: "PHP", icon: "\uD83D\uDC18", color: "#777BB4", level: 90 },
-      { name: "Node.js", icon: "\uD83D\uDFE2", color: "#339933", level: 80 },
-      { name: "REST API", icon: "\uD83D\uDD17", color: "#FF6B35", level: 90 },
-      { name: "Go", icon: "\uD83D\uDC39", color: "#00ADD8", level: 75 },
-      { name: "Java", icon: "\u2615", color: "#ED8B00", level: 50 },
-      { name: "Python", icon: "\uD83D\uDC0D", color: "#3776AB", level: 60 },
-      { name: "TypeScript", icon: "\uD83D\uDD37", color: "#3178C6", level: 80 }
+      { name: "PHP", slug: "php", icon: "\uD83D\uDC18", color: "#777BB4", level: 90 },
+      { name: "Node.js", slug: "nodedotjs", icon: "\uD83D\uDFE2", color: "#339933", level: 80 },
+      { name: "REST API", slug: "", icon: "\uD83D\uDD17", color: "#FF6B35", level: 90 },
+      { name: "Go", slug: "go", icon: "\uD83D\uDC39", color: "#00ADD8", level: 75 },
+      { name: "Java", slug: "openjdk", icon: "\u2615", color: "#ED8B00", level: 50 },
+      { name: "Python", slug: "python", icon: "\uD83D\uDC0D", color: "#3776AB", level: 60 },
+      { name: "TypeScript", slug: "typescript", icon: "\uD83D\uDD37", color: "#3178C6", level: 80 }
     ],
     framework: [
-      { name: "React.js", icon: "\u269B\uFE0F", color: "#61DAFB", level: 75 },
-      { name: "Next.js", icon: "\u25B2", color: "#000000", level: 75 },
-      { name: "Vue.js", icon: "\uD83D\uDFE9", color: "#4FC08D", level: 70 },
-      { name: "Bootstrap", icon: "\uD83C\uDD71\uFE0F", color: "#7952B3", level: 90 },
-      { name: "Tailwind CSS", icon: "\uD83C\uDF2C\uFE0F", color: "#06B6D4", level: 80 },
-      { name: "jQuery", icon: "\uD83D\uDCD8", color: "#0769AD", level: 80 },
-      { name: "Vite", icon: "\u26A1", color: "#646CFF", level: 75 },
-      { name: "Laravel", icon: "\uD83D\uDD25", color: "#FF2D20", level: 90 },
-      { name: "Livewire", icon: "\uD83D\uDD04", color: "#FB70A9", level: 75 },
-      { name: "Inertia.js", icon: "\uD83E\uDDED", color: "#9553E9", level: 75 },
-      { name: "CodeIgniter", icon: "\uD83D\uDD25", color: "#EF4223", level: 80 },
-      { name: "CakePHP", icon: "\uD83C\uDF70", color: "#D33C43", level: 90 },
-      { name: "OpenCart", icon: "\uD83D\uDED2", color: "#2AA9E0", level: 70 },
-      { name: "Express.js", icon: "\uD83D\uDE82", color: "#000000", level: 80 },
-      { name: "Gin", icon: "\uD83C\uDF78", color: "#00ADD8", level: 65 }
+      { name: "React.js", slug: "react", icon: "\u269B\uFE0F", color: "#61DAFB", level: 75 },
+      { name: "Next.js", slug: "nextdotjs", icon: "\u25B2", color: "#000000", level: 75 },
+      { name: "Vue.js", slug: "vuedotjs", icon: "\uD83D\uDFE9", color: "#4FC08D", level: 70 },
+      { name: "Bootstrap", slug: "bootstrap", icon: "\uD83C\uDD71\uFE0F", color: "#7952B3", level: 90 },
+      { name: "Tailwind CSS", slug: "tailwindcss", icon: "\uD83C\uDF2C\uFE0F", color: "#06B6D4", level: 80 },
+      { name: "jQuery", slug: "jquery", icon: "\uD83D\uDCD8", color: "#0769AD", level: 80 },
+      { name: "Vite", slug: "vite", icon: "\u26A1", color: "#646CFF", level: 75 },
+      { name: "Laravel", slug: "laravel", icon: "\uD83D\uDD25", color: "#FF2D20", level: 90 },
+      { name: "Livewire", slug: "livewire", icon: "\uD83D\uDD04", color: "#FB70A9", level: 75 },
+      { name: "Inertia.js", slug: "inertia", icon: "\uD83E\uDDED", color: "#9553E9", level: 75 },
+      { name: "CodeIgniter", slug: "codeigniter", icon: "\uD83D\uDD25", color: "#EF4223", level: 80 },
+      { name: "CakePHP", slug: "cakephp", icon: "\uD83C\uDF70", color: "#D33C43", level: 90 },
+      { name: "OpenCart", slug: "opencart", icon: "\uD83D\uDED2", color: "#2AA9E0", level: 70 },
+      { name: "Express.js", slug: "express", icon: "\uD83D\uDE82", color: "#000000", level: 80 },
+      { name: "Gin", slug: "gin", icon: "\uD83C\uDF78", color: "#00ADD8", level: 65 }
     ],
     tools: [
-      { name: "VS Code", icon: "\uD83D\uDCBB", color: "#007ACC", level: 95 },
-      { name: "Kiro (AWS)", icon: "\uD83E\uDD16", color: "#FF9900", level: 90 },
-      { name: "Claude AI", icon: "\uD83E\uDDE0", color: "#6B4FBB", level: 85 },
-      { name: "AWS", icon: "\u2601\uFE0F", color: "#FF9900", level: 70 },
-      { name: "Linux Server", icon: "\uD83D\uDDA5\uFE0F", color: "#FCC624", level: 80 },
-      { name: "Postman", icon: "\uD83D\uDCEE", color: "#FF6C37", level: 90 },
-      { name: "Git", icon: "\uD83D\uDCDD", color: "#F05032", level: 90 },
-      { name: "GitHub", icon: "\uD83D\uDC19", color: "#181717", level: 90 },
-      { name: "GitLab", icon: "\uD83E\uDD8A", color: "#FC6D26", level: 75 },
-      { name: "Docker", icon: "\uD83D\uDC33", color: "#2496ED", level: 70 },
-      { name: "Nginx", icon: "\uD83D\uDFE9", color: "#009639", level: 90 },
-      { name: "Apache", icon: "\uD83E\uDEB6", color: "#D22128", level: 90 },
-      { name: "Kafka", icon: "\uD83D\uDCE8", color: "#231F20", level: 70 }
+      { name: "VS Code", slug: "", icon: "\uD83D\uDCBB", color: "#007ACC", level: 95 },
+      { name: "Kiro (AWS)", slug: "", icon: "\uD83E\uDD16", color: "#FF9900", level: 90 },
+      { name: "Claude AI", slug: "claude", icon: "\uD83E\uDDE0", color: "#D97757", level: 85 },
+      { name: "AWS", slug: "amazonwebservices", icon: "\u2601\uFE0F", color: "#FF9900", level: 70 },
+      { name: "Linux Server", slug: "linux", icon: "\uD83D\uDDA5\uFE0F", color: "#FCC624", level: 80 },
+      { name: "Postman", slug: "postman", icon: "\uD83D\uDCEE", color: "#FF6C37", level: 90 },
+      { name: "Git", slug: "git", icon: "\uD83D\uDCDD", color: "#F05032", level: 90 },
+      { name: "GitHub", slug: "github", icon: "\uD83D\uDC19", color: "#181717", level: 90 },
+      { name: "GitLab", slug: "gitlab", icon: "\uD83E\uDD8A", color: "#FC6D26", level: 75 },
+      { name: "Docker", slug: "docker", icon: "\uD83D\uDC33", color: "#2496ED", level: 70 },
+      { name: "Nginx", slug: "nginx", icon: "\uD83D\uDFE9", color: "#009639", level: 90 },
+      { name: "Apache", slug: "apache", icon: "\uD83E\uDEB6", color: "#D22128", level: 90 },
+      { name: "Kafka", slug: "apachekafka", icon: "\uD83D\uDCE8", color: "#231F20", level: 70 }
     ],
     database: [
-      { name: "PostgreSQL", icon: "\uD83D\uDC18", color: "#336791", level: 90 },
-      { name: "MySQL", icon: "\uD83D\uDC2C", color: "#4479A1", level: 90 },
-      { name: "MariaDB", icon: "\uD83E\uDD9C", color: "#003545", level: 90 },
-      { name: "SQLite", icon: "\uD83E\uDEB6", color: "#003B57", level: 90 }
+      { name: "PostgreSQL", slug: "postgresql", icon: "\uD83D\uDC18", color: "#336791", level: 90 },
+      { name: "MySQL", slug: "mysql", icon: "\uD83D\uDC2C", color: "#4479A1", level: 90 },
+      { name: "MariaDB", slug: "mariadb", icon: "\uD83E\uDD9C", color: "#003545", level: 90 },
+      { name: "SQLite", slug: "sqlite", icon: "\uD83E\uDEB6", color: "#003B57", level: 90 }
     ]
   },
 
@@ -190,6 +190,7 @@ export const portfolioData = {
       position: "Programmer",
       location: "Jakarta Utara",
       period: "Mei 2022 - Sekarang",
+      icon: "/image/icon/pt_sis.png",
       description: {
         id: "Mengembangkan berbagai proyek penting seperti HRIS, CMS, E-Commerce, E-Ticketing, dan Pengelolaan Petty Cash serta proyek lainnya.",
         en: "Developed various key projects such as HRIS, CMS, E-Commerce, E-Ticketing, and Petty Cash Management, among others."
@@ -201,6 +202,7 @@ export const portfolioData = {
       position: "Junior Programmer",
       location: "Jakarta Utara",
       period: "Nov 2019 - Mei 2022",
+      icon: "/image/icon/pt_sis.png",
       description: {
         id: "Berperan sebagai Junior Programmer dalam tim pengembangan software, terlibat dalam proses pengembangan aplikasi dan sistem internal perusahaan.",
         en: "Served as a Junior Programmer on the software development team, involved in developing the company's applications and internal systems."
@@ -212,6 +214,7 @@ export const portfolioData = {
       position: "Karyawan Magang",
       location: "Cilegon",
       period: "2019",
+      icon: "/image/icon/magang.png",
       description: {
         id: "Ditempatkan pada Subbagian Umum Dan Kepatuhan Internal (SUKI). Mengerjakan laporan keluar masuk barang berupa ATK.",
         en: "Assigned to the General Affairs and Internal Compliance Subdivision (SUKI). Handled incoming and outgoing goods reports for office stationery."
@@ -226,6 +229,7 @@ export const portfolioData = {
       institution: "Institut Teknologi dan Bisnis Swadharma",
       degree: "S1 Teknik Informatika",
       period: "Sep 2021 - Sep 2025",
+      icon: "/image/icon/s1.png",
       description: {
         id: "Berlokasi di Jakarta Pusat. IPK: 3.79/4.00.",
         en: "Located in Central Jakarta. GPA: 3.79/4.00."
@@ -236,6 +240,7 @@ export const portfolioData = {
       institution: "SMK Negeri 1 Pandeglang",
       degree: "Sekolah Menengah Kejuruan",
       period: "2016 - 2019",
+      icon: "/image/icon/smk.png",
       description: {
         id: "Berlokasi di Pandeglang, Banten.",
         en: "Located in Pandeglang, Banten."
@@ -246,6 +251,7 @@ export const portfolioData = {
       institution: "SMP Negeri 2 Cimanuk",
       degree: "Sekolah Menengah Pertama",
       period: "2013 - 2016",
+      icon: "/image/icon/smp.png",
       description: {
         id: "Berlokasi di Pandeglang, Banten.",
         en: "Located in Pandeglang, Banten."

@@ -1,6 +1,53 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SectionTitle from './SectionTitle.jsx'
 import { useLanguage } from '../hooks/useLanguage.js'
+
+// Brand colors that are too dark to show on the dark card background.
+// For these we tint the logo light instead of using the exact brand hex.
+const DARK_COLORS = ['#000000', '#181717', '#231f20', '#003545', '#003b57']
+
+const iconColorFor = (color) => {
+  if (!color) return 'ffffff'
+  return DARK_COLORS.includes(color.toLowerCase()) ? 'e2e8f0' : color.replace('#', '')
+}
+
+// A single skill row: brand logo (Simple Icons CDN) + name + level bar.
+// Falls back to the emoji icon if there is no slug or the logo fails to load.
+const SkillItem = ({ skill }) => {
+  const [logoFailed, setLogoFailed] = useState(false)
+  const showLogo = skill.slug && !logoFailed
+
+  return (
+    <div className="skill-item">
+      <div className="skill-header">
+        <span className="skill-name">
+          <span className="skill-icon" aria-hidden="true">
+            {showLogo ? (
+              <img
+                src={`https://cdn.simpleicons.org/${skill.slug}/${iconColorFor(skill.color)}`}
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+                onError={() => setLogoFailed(true)}
+              />
+            ) : (
+              skill.icon
+            )}
+          </span>
+          {skill.name}
+        </span>
+        <span className="skill-percentage">{skill.level}%</span>
+      </div>
+      <div className="skill-progress">
+        <div
+          className="skill-progress-bar"
+          style={{ width: `${skill.level}%` }}
+        ></div>
+      </div>
+    </div>
+  )
+}
 
 const Skills = ({ data }) => {
   const { t } = useLanguage()
@@ -18,18 +65,7 @@ const Skills = ({ data }) => {
             <h3>Frontend</h3>
             <div className="skills-list">
               {data.frontend.map((skill, index) => (
-                <div key={index} className="skill-item">
-                  <div className="skill-header">
-                    <span className="skill-name">{skill.name}</span>
-                    <span className="skill-percentage">{skill.level}%</span>
-                  </div>
-                  <div className="skill-progress">
-                    <div 
-                      className="skill-progress-bar"
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
-                  </div>
-                </div>
+                <SkillItem key={index} skill={skill} />
               ))}
             </div>
           </div>
@@ -38,18 +74,7 @@ const Skills = ({ data }) => {
             <h3>Backend</h3>
             <div className="skills-list">
               {data.backend.map((skill, index) => (
-                <div key={index} className="skill-item">
-                  <div className="skill-header">
-                    <span className="skill-name">{skill.name}</span>
-                    <span className="skill-percentage">{skill.level}%</span>
-                  </div>
-                  <div className="skill-progress">
-                    <div 
-                      className="skill-progress-bar"
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
-                  </div>
-                </div>
+                <SkillItem key={index} skill={skill} />
               ))}
             </div>
           </div>
@@ -58,18 +83,7 @@ const Skills = ({ data }) => {
             <h3>Framework</h3>
             <div className="skills-list">
               {data.framework.map((skill, index) => (
-                <div key={index} className="skill-item">
-                  <div className="skill-header">
-                    <span className="skill-name">{skill.name}</span>
-                    <span className="skill-percentage">{skill.level}%</span>
-                  </div>
-                  <div className="skill-progress">
-                    <div 
-                      className="skill-progress-bar"
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
-                  </div>
-                </div>
+                <SkillItem key={index} skill={skill} />
               ))}
             </div>
           </div>
@@ -78,18 +92,7 @@ const Skills = ({ data }) => {
             <h3>Tools</h3>
             <div className="skills-list">
               {data.tools.map((skill, index) => (
-                <div key={index} className="skill-item">
-                  <div className="skill-header">
-                    <span className="skill-name">{skill.name}</span>
-                    <span className="skill-percentage">{skill.level}%</span>
-                  </div>
-                  <div className="skill-progress">
-                    <div 
-                      className="skill-progress-bar"
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
-                  </div>
-                </div>
+                <SkillItem key={index} skill={skill} />
               ))}
             </div>
           </div>
@@ -98,18 +101,7 @@ const Skills = ({ data }) => {
             <h3>Database</h3>
             <div className="skills-list">
               {data.database.map((skill, index) => (
-                <div key={index} className="skill-item">
-                  <div className="skill-header">
-                    <span className="skill-name">{skill.name}</span>
-                    <span className="skill-percentage">{skill.level}%</span>
-                  </div>
-                  <div className="skill-progress">
-                    <div 
-                      className="skill-progress-bar"
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
-                  </div>
-                </div>
+                <SkillItem key={index} skill={skill} />
               ))}
             </div>
           </div>        
@@ -172,9 +164,30 @@ const Skills = ({ data }) => {
         }
 
         .skill-name {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
           font-weight: 500;
           font-size: 0.9rem;
           color: var(--text-secondary);
+        }
+
+        .skill-icon {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 18px;
+          height: 18px;
+          font-size: 0.95rem;
+          line-height: 1;
+          flex-shrink: 0;
+        }
+
+        .skill-icon img {
+          display: block;
+          width: 18px;
+          height: 18px;
+          object-fit: contain;
         }
 
         .skill-percentage {
